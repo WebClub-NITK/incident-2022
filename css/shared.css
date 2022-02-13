@@ -1,0 +1,9 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "signatra";
+    src: url("../assets/fonts/Signatra.otf")
+}
