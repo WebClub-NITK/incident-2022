@@ -1,9 +1,226 @@
 *, *::after, *::before{
-    margin: 0;
-    padding: 0;
+		margin: 0;
+		padding: 0;
 }
 
 @font-face {
-    font-family: "signatra";
-    src: url("../assets/fonts/Signatra.otf")
+		font-family: "signatra";
+		src: url("../assets/fonts/Signatra.otf")
 }
+
+/* html{
+	position: relative;
+	min-height: 100%;
+} */
+
+/* ---Footer start--- */
+
+/* General footer styling */
+@import url('https:fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	color: #d9d9d9;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+a, a:link, a:visited, a:focus, a:hover, a:active{
+		text-decoration: none;
+}
+
+footer{
+	bottom: 0;
+	width: 100%;
+	background: #000;
+	position: fixed;
+	/* background-image: radial-gradient(circle at top left, #000, #3c4858); */
+}
+
+.main-content{
+	display: flex;
+}
+
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+
+/* Box styling */
+.box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+/* Content with underline */
+.box .content-with-underline{
+	margin: 20px 0 0 0;
+	position: relative;
+}
+
+.box .content-with-underline:before{
+	position: absolute;
+	content: '';
+	top: -10px;
+	height: 2px;
+	width: 100%;
+	background: #1a1a1a;
+}
+
+.box .content-with-underline:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 15%;
+	background: #3498db;
+	top: -10px;
+}
+
+/* Content without underline */
+.box .content{
+	margin: 20px 0 0 0;
+	position: relative;
+}
+
+.box .content:before{
+	position: absolute;
+	content: '';
+	top: -10px;
+	height: 2px;
+	width: 100%;
+
+}
+
+.box .content:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 15%;
+	top: -10px;
+}
+
+/* Lets Connect section */
+.right .content-with-underline .social{
+	margin: 20px 0 0 0;
+}
+
+.right .content-with-underline .social a{
+	padding: 0 2px;
+}
+
+.right .content-with-underline .social a span{
+	height: 40px;
+	width: 40px;
+	background: #146791;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 100px;
+	transition: 0.3s;
+}
+
+.right .content-with-underline .social a span:hover{
+	background: #3498db;
+}
+
+.right .content-with-underline .phone{
+	margin: 15px 0;
+}
+
+.right .content-with-underline .place .fas, .email .fas{
+	margin-right: 2px;
+}
+
+/* Links section */
+.center .content-with-underline .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+
+/* Logo section */
+.footer-logo{
+	height: 100%;
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+/* Credits section */
+.bottom center{
+	padding: 5px;
+	font-size: 0.8rem;
+}
+.bottom center span{
+	color: #c3c2c2;
+}
+.bottom center a{
+	color: #3498db;
+	text-decoration: none;
+}
+.bottom center a:hover{
+	text-decoration: underline;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 900px) {
+	footer{
+		position: relative;
+		bottom: 0px;
+	}
+	.main-content{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.main-content .box{
+		margin: 5px 0;
+	}
+}
+
+@keyframes confetti {
+	0% {
+		top: 100%;
+	}
+	100% {
+		top: -100%;
+	}
+}
+
+#landing-view{
+		min-height: 100%;
+}
+
+/* Confetti background and animation */
+.bg-confetti {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 100%;
+	height: auto;
+	transform: translateX(-50%) translateZ(0);
+	animation: confetti linear infinite;
+}
+footer img:nth-child(1) {
+	animation-delay: -160s;
+	animation-duration: 40s;
+}
+footer img:nth-child(2) {
+	animation-delay: -120s;
+	animation-duration: 80s;
+}
+footer img:nth-child(3) {
+	animation-delay: -80s;
+	animation-duration: 120s;
+}
+footer img:nth-child(4) {
+	animation-delay: -40s;
+	animation-duration: 160s;
+}
+footer img:nth-child(5) {
+	animation-delay: 0s;
+	animation-duration: 200s;
+}
+
+/* ---Footer end--- */
