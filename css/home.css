@@ -126,6 +126,17 @@
     bottom: -50px;
 }
 
+#scrolltrigger {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15px;
+}
+
+#inner {
+    animation: scrolltriggeranim 1s ease-in 0s infinite normal forwards;
+}
+
 @media (max-width: 1200px) {
     #landing-view-scene {
         background-size: 100% 130%;
@@ -145,5 +156,18 @@
 
     #tree img {
         bottom: -10px;
+    }
+}
+
+@keyframes scrolltriggeranim {
+    0% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(20px);
+    }
+    100% {
+        animation-timing-function: linear;
+        transform: translateY(0);
     }
 }
