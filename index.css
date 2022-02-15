@@ -107,7 +107,9 @@ img {
   display: block;
   object-fit: cover;
 }
-
+.atropos-inner{
+    border-radius: 3%;
+}
 .card {
   margin: 15px;
   display: flex;
