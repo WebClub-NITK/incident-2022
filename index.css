@@ -159,7 +159,7 @@ img {
   color: #fafafa;
 }
 
-.card__body h4 {
+.card__body h3 {
   font-size: 1.5rem;
   text-transform: capitalize;
 }
@@ -171,9 +171,17 @@ img {
   justify-content: space-between;
 }
 
-.card__footer > small {
-  color:whitesmoke;
+.card__footer small{
+  color:#fafafa;
+  font-size: 0.75rem;
 }
+
+.card__footer h5{
+  color:#fafafa;
+  margin: 0.3rem;
+  font-size: 0.75rem;
+}
+
 .custom-btn {
     background-color:#fafafa;
     width: 130px;
@@ -193,7 +201,9 @@ img {
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
   }
-
+.custom-btn{
+  overflow: visible;
+}
   .btn-11 {
     border: none;
     background: rgb(251,33,117);

@@ -1,7 +1,7 @@
 tags = document.getElementsByClassName("tags");
 
 for (el of tags) {
-  el.setAttribute("data-atropos-offset", "2%");
+  el.setAttribute("data-atropos-offset", "-2%");
 }
 
 card_images = document.getElementsByClassName("card__image");
@@ -13,5 +13,5 @@ for (el of card_images) {
 buttons = document.getElementsByClassName("custom-btn");
 
 for (el of buttons) {
-    el.setAttribute("data-atropos-offset", "10%");
+    el.setAttribute("data-atropos-offset", "15%");
   }
