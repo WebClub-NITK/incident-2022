@@ -256,6 +256,12 @@ img {
       100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
   }
   @media only screen and (max-width: 450px) {
+    .content{
+      margin: 30px;
+    }
+    .h3{
+      margin: auto;
+    }
     .card{
       margin: auto;
       width: 70%;
