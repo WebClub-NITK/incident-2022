@@ -22,14 +22,14 @@ body {
   background:#0a182b;
 }
 
-.container {
+.events-container {
   margin: 0px;
   position: relative;
   width: 100%;
   height: 100%;
 }
 
-.parallax {
+.events-parallax {
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@ body {
   height: 100%;
 }
 
-.parallax img {
+.events-parallax img {
   position: absolute;
   top: 0;
   left: 50%;
@@ -84,7 +84,7 @@ img:nth-child(5) {
   animation-duration: 200s;
 }
 
-.event-header{
+.events-header{
   margin: 20px auto;
   color: #a1dcf0;
   font-family: 'Shizuru', cursive;
@@ -100,7 +100,7 @@ img:nth-child(5) {
   margin: 0;
 }
 
-.cards {
+.events-cards {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -109,7 +109,7 @@ img:nth-child(5) {
   margin-block: 2rem;
   gap: 2rem;
 }
-.card__image{
+.events-card__image{
   height: 15em;
 }
 img {
@@ -122,7 +122,7 @@ img {
   padding: 0px;
     border-radius: 3%;
 }
-.card {
+.events-card {
   margin: 17.5px;
   display: flex;
   flex-direction: column;
@@ -135,70 +135,70 @@ img {
   background: radial-gradient( #2f80ed, #0f2646);
 }
 
-.card__body {
+.events-card__body {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
-.tags{
+.events-tags{
   opacity: 0;
 }
-.card:hover .tags{
+.events-card:hover .events-tags{
   transition:ease-in-out;
   opacity: 1;
 }
-.tag {
+.events-tag {
   align-self: flex-start;
   padding: 0.25em 0.75em;
   border-radius: 1em;
   font-size: 0.75rem;
 }
 
-.tag + .tag {
+.events-tag + .events-tag {
   margin-left: 0.5em;
 }
 
-.tag-blue {
+.events-tag-blue {
   background: #56ccf2;
   background: linear-gradient(to bottom, #2f80ed, #a1dcf0);
   color: #fafafa;
 }
 
-.tag-brown {
+.events-tag-brown {
   background: #d1913c;
   background: linear-gradient(to bottom, #ffedd6, #d1913c);
   color: #fafafa;
 }
 
-.tag-red {
+.events-tag-red {
   background: #cb2d3e;
   background: linear-gradient(to bottom, #ec958f, #cb2d3e);
   color: #fafafa;
 }
 
-.card__body h3 {
+.events-card__body h3 {
   font-size: 1.5rem;
   text-transform: capitalize;
 }
 
-.card__footer {
+.events-card__footer {
   display: flex;
   padding: 1rem;
   margin-top: auto;
   justify-content: space-between;
 }
 
-.card__footer h5{
+.events-card__footer h5{
   color:#fafafa;
   margin: 0.3rem;
   font-size: 1rem;
 }
-.left{
+.events-left{
   display: flex;
   align-items: center;
 }
-.custom-btn {
+.events-custom-btn {
     background-color:#fafafa;
     width: 130px;
     height: 40px;
@@ -216,22 +216,22 @@ img {
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
-  }
-.custom-btn{
+}
+.events-custom-btn{
   overflow: visible;
 }
-  .btn-11 {
+  .events-btn-11 {
     border: none;
     background: rgb(251,33,117);
       background: linear-gradient(0deg, rgba(251,33,117,1) 0%, rgba(234,76,137,1) 100%);
       color: #fff;
       overflow: hidden;
   }
-  .btn-11:hover {
+  .events-btn-11:hover {
       text-decoration: none;
       color: #fff;
   }
-  .btn-11:before {
+  .events-btn-11:before {
       position: absolute;
       content: '';
       display: inline-block;
@@ -242,10 +242,10 @@ img {
       background-color: #fff;
       animation: shiny-btn1 3s ease-in-out infinite;
   }
-  .btn-11:hover{
+  .events-btn-11:hover{
     opacity: .7;
   }
-  .btn-11:active{
+  .events-btn-11:active{
     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
                 -4px -4px 6px 0 rgba(116, 125, 136, .2), 
       inset -4px -4px 6px 0 rgba(255,255,255,.2),
@@ -258,21 +258,23 @@ img {
       100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
   }
   @media only screen and (max-width: 450px) {
-    .content{
-      margin: 30px;
+  
+    .events-content{
+      text-align: center;
+      width: 100%;
     }
-    .h3{
+    .events-h3{
       margin: auto;
     }
-    .card{
-      margin: 0px;
+    .events-card{
+      margin:auto;
       width: 70%;
     }
-    .card__footer{
+    .events-card__footer{
       flex-direction: column;
       align-items: center;
     }
-    .custom-btn{
+    .events-custom-btn{
       margin: 15px 0px;
     }
   }
