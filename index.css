@@ -19,8 +19,7 @@
 body {
   margin: 0px;
   padding: 1rem;
-  background: #000;
-  background-image: radial-gradient(circle at top left, #000, #3c4858);
+  background:#0a182b;
 }
 
 .container {
@@ -85,6 +84,14 @@ img:nth-child(5) {
   animation-duration: 200s;
 }
 
+.event-header{
+  margin: 20px auto;
+  color: #a1dcf0;
+  font-family: 'Shizuru', cursive;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
 *,
 *::before,
 *::after {
@@ -94,6 +101,7 @@ img:nth-child(5) {
 }
 
 .cards {
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -101,7 +109,9 @@ img:nth-child(5) {
   margin-block: 2rem;
   gap: 2rem;
 }
-
+.card__image{
+  height: 15em;
+}
 img {
   max-width: 100%;
   display: block;
@@ -111,7 +121,7 @@ img {
     border-radius: 3%;
 }
 .card {
-  margin: 15px;
+  margin: 17.5px;
   display: flex;
   flex-direction: column;
   width: clamp(20rem, calc(20rem + 2vw), 22rem);
@@ -120,7 +130,7 @@ img {
   border-radius: 1em;
   background: #2f80ed;
   color: whitesmoke;
-  background: linear-gradient(to right, #2f80ed, #3c4858);
+  background: radial-gradient( #2f80ed, #0f2646);
 }
 
 .card__body {
@@ -129,7 +139,13 @@ img {
   flex-direction: column;
   gap: 0.5rem;
 }
-
+.tags{
+  opacity: 0;
+}
+.card:hover .tags{
+  transition:ease-in-out;
+  opacity: 1;
+}
 .tag {
   align-self: flex-start;
   padding: 0.25em 0.75em;
@@ -143,19 +159,19 @@ img {
 
 .tag-blue {
   background: #56ccf2;
-  background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+  background: linear-gradient(to bottom, #2f80ed, #a1dcf0);
   color: #fafafa;
 }
 
 .tag-brown {
   background: #d1913c;
-  background: linear-gradient(to bottom, #ffd194, #d1913c);
+  background: linear-gradient(to bottom, #ffedd6, #d1913c);
   color: #fafafa;
 }
 
 .tag-red {
   background: #cb2d3e;
-  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  background: linear-gradient(to bottom, #ec958f, #cb2d3e);
   color: #fafafa;
 }
 
@@ -171,17 +187,15 @@ img {
   justify-content: space-between;
 }
 
-.card__footer small{
-  color:#fafafa;
-  font-size: 0.75rem;
-}
-
 .card__footer h5{
   color:#fafafa;
   margin: 0.3rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
-
+.left{
+  display: flex;
+  align-items: center;
+}
 .custom-btn {
     background-color:#fafafa;
     width: 130px;
