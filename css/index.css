@@ -260,15 +260,15 @@ img {
   @media only screen and (max-width: 450px) {
   
     .events-content{
-      margin: 75px;
+      margin: 25px;
       text-align: center;
     }
     .events-h3{
       margin: auto;
     }
-    .events-card{
+    .events-card {
       margin:auto;
-      width: 70%;
+      width: 65%;
     }
     .events-card__footer{
       flex-direction: column;
