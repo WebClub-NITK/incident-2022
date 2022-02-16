@@ -7,3 +7,40 @@
     font-family: "signatra";
     src: url("../assets/fonts/Signatra.otf")
 }
+
+.about-us-box{
+    background: url(../assets/landing_view/bg.png) no-repeat center center fixed;
+    /* border: solid 2px black; */
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../assets/landing_view/bg_3.png) , 
+                      /* url(../assets/landing_view/bg_4.png) ,  */
+                      url(../assets/landing_view/bg.png) , 
+                      url(../assets/landing_view/bg_2.png) , 
+                      url(../assets/landing_view/bg_1.png) ;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: local;     
+}
+.about-us-title{
+    text-align: center;
+    /* border: solid 2px black; */
+    margin: 5% 30% 2% 30%;
+    font-size: 60px;
+    font-weight: 200;
+    font-family: "signatra";
+}
+.about-us-content{
+    /* border : solid 2px black; */
+    margin: 0% 15% 5% 15%;
+    padding: 1% 2% 1% 2%;
+    font-size: 40px;
+    font-weight: 100;
+    border-radius: 10px;
+    background-color: #888888;
+    background: rgba(255,255,255,0.2);
+    font-family: "signatra";  
+}
