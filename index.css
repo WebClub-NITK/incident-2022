@@ -255,3 +255,16 @@ img {
       81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
       100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
   }
+  @media only screen and (max-width: 450px) {
+    .card{
+      margin: auto;
+      width: 70%;
+    }
+    .card__footer{
+      flex-direction: column;
+      align-items: center;
+    }
+    .custom-btn{
+      margin: 15px 0px;
+    }
+  }
