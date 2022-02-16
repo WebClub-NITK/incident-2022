@@ -118,6 +118,8 @@ img {
   object-fit: cover;
 }
 .atropos-inner{
+  margin: 0px;
+  padding: 0px;
     border-radius: 3%;
 }
 .card {
@@ -263,7 +265,7 @@ img {
       margin: auto;
     }
     .card{
-      margin: auto;
+      margin: 0px;
       width: 70%;
     }
     .card__footer{
