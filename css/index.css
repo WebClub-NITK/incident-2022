@@ -260,8 +260,8 @@ img {
   @media only screen and (max-width: 450px) {
   
     .events-content{
+      margin: 75px;
       text-align: center;
-      width: 100%;
     }
     .events-h3{
       margin: auto;
