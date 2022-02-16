@@ -1,64 +1,56 @@
-*, *::after, *::before{
-		margin: 0;
-		padding: 0;
+	*, *::after, *::before{
+	margin: 0;
+	padding: 0;
 }
 
 @font-face {
-		font-family: "signatra";
-		src: url("../assets/fonts/Signatra.otf")
+	font-family: "signatra";
+	src: url("../assets/fonts/Signatra.otf")
 }
-
-/* html{
-	position: relative;
-	min-height: 100%;
-} */
 
 /* ---Footer start--- */
 
 /* General footer styling */
 @import url('https:fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-	margin: 0;
-	padding: 0;
-	color: #d9d9d9;
-	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
-}
 
-a, a:link, a:visited, a:focus, a:hover, a:active{
-		text-decoration: none;
+footer a, a:link, a:visited, a:focus, a:hover, a:active{
+	text-decoration: none;
+    color: #d9d9d9;
 }
 
 footer{
 	bottom: 0;
 	width: 100%;
 	background: #000;
-	position: fixed;
+	position: relative;
+    color: #d9d9d9;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 	/* background-image: radial-gradient(circle at top left, #000, #3c4858); */
 }
 
-.main-content{
+footer .main-content{
 	display: flex;
 }
 
-.main-content .box{
+footer .main-content .box{
 	flex-basis: 50%;
 	padding: 10px 20px;
 }
 
 /* Box styling */
-.box h2{
+footer .box h2{
 	font-size: 1.125rem;
 	font-weight: 600;
 }
 
 /* Content with underline */
-.box .content-with-underline{
+footer .box .content-with-underline{
 	margin: 20px 0 0 0;
 	position: relative;
 }
 
-.box .content-with-underline:before{
+footer .box .content-with-underline:before{
 	position: absolute;
 	content: '';
 	top: -10px;
@@ -67,7 +59,7 @@ footer{
 	background: #1a1a1a;
 }
 
-.box .content-with-underline:after{
+footer .box .content-with-underline:after{
 	position: absolute;
 	content: '';
 	height: 2px;
@@ -77,12 +69,12 @@ footer{
 }
 
 /* Content without underline */
-.box .content{
+footer .box .content{
 	margin: 20px 0 0 0;
 	position: relative;
 }
 
-.box .content:before{
+footer .box .content:before{
 	position: absolute;
 	content: '';
 	top: -10px;
@@ -91,7 +83,7 @@ footer{
 
 }
 
-.box .content:after{
+footer .box .content:after{
 	position: absolute;
 	content: '';
 	height: 2px;
@@ -104,11 +96,11 @@ footer{
 	margin: 20px 0 0 0;
 }
 
-.right .content-with-underline .social a{
+footer .right .content-with-underline .social a{
 	padding: 0 2px;
 }
 
-.right .content-with-underline .social a span{
+footer .right .content-with-underline .social a span{
 	height: 40px;
 	width: 40px;
 	background: #146791;
@@ -119,20 +111,20 @@ footer{
 	transition: 0.3s;
 }
 
-.right .content-with-underline .social a span:hover{
+footer .right .content-with-underline .social a span:hover{
 	background: #3498db;
 }
 
-.right .content-with-underline .phone{
+footer .right .content-with-underline .phone{
 	margin: 15px 0;
 }
 
-.right .content-with-underline .place .fas, .email .fas{
+footer .right .content-with-underline .place .fas, .email .fas{
 	margin-right: 2px;
 }
 
 /* Links section */
-.center .content-with-underline .text{
+footer .center .content-with-underline .text{
 	font-size: 1.0625rem;
 	font-weight: 500;
 	text-decoration: none;
@@ -193,12 +185,21 @@ footer{
 }
 
 /* Confetti background and animation */
+
+/* footer .parallax {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: auto;
+} */
+
 .bg-confetti {
 	position: absolute;
 	top: 0;
 	left: 50%;
 	width: 100%;
-	height: auto;
+	height: inherit;
 	transform: translateX(-50%) translateZ(0);
 	animation: confetti linear infinite;
 }
