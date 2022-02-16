@@ -11,7 +11,7 @@
 /* ---Footer start--- */
 
 /* General footer styling */
-@import url('https:fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+/* @import url('https:fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); */
 
 footer a, a:link, a:visited, a:focus, a:hover, a:active{
 	text-decoration: none;
@@ -21,7 +21,7 @@ footer a, a:link, a:visited, a:focus, a:hover, a:active{
 footer{
 	bottom: 0;
 	width: 100%;
-	background: #000;
+	background: rgb(1,1,1);
 	position: relative;
     color: #d9d9d9;
 	box-sizing: border-box;
@@ -30,12 +30,13 @@ footer{
 }
 
 footer .main-content{
-	display: flex;
+    display: flex;
+    padding: 70px 0 30px 0;
 }
 
 footer .main-content .box{
 	flex-basis: 50%;
-	padding: 10px 20px;
+	padding: 20px;
 }
 
 /* Box styling */
@@ -64,7 +65,7 @@ footer .box .content-with-underline:after{
 	content: '';
 	height: 2px;
 	width: 15%;
-	background: #3498db;
+	background: #1B98D7;
 	top: -10px;
 }
 
@@ -103,7 +104,7 @@ footer .right .content-with-underline .social a{
 footer .right .content-with-underline .social a span{
 	height: 40px;
 	width: 40px;
-	background: #146791;
+	background: #2685D8;
 	line-height: 40px;
 	text-align: center;
 	font-size: 18px;
@@ -112,7 +113,7 @@ footer .right .content-with-underline .social a span{
 }
 
 footer .right .content-with-underline .social a span:hover{
-	background: #3498db;
+	background: #43abe7;
 }
 
 footer .right .content-with-underline .phone{
@@ -124,10 +125,17 @@ footer .right .content-with-underline .place .fas, .email .fas{
 }
 
 /* Links section */
-footer .center .content-with-underline .text{
+footer .text{
 	font-size: 1.0625rem;
-	font-weight: 500;
-	text-decoration: none;
+	font-weight: 300;
+}
+
+footer .content-with-underline .text {
+    text-decoration: none;
+}
+
+footer .content-with-underline .text a:hover {
+    color: #1B98D7;
 }
 
 
@@ -162,66 +170,20 @@ footer .center .content-with-underline .text{
 		position: relative;
 		bottom: 0px;
 	}
-	.main-content{
+	footer .main-content{
 		flex-wrap: wrap;
 		flex-direction: column;
 	}
-	.main-content .box{
+	footer .main-content .box{
 		margin: 5px 0;
+        padding-left: 50px;
+        padding-right: 50px;
 	}
-}
-
-@keyframes confetti {
-	0% {
-		top: 100%;
-	}
-	100% {
-		top: -100%;
-	}
-}
-
-#landing-view{
-		min-height: 100%;
-}
-
-/* Confetti background and animation */
-
-/* footer .parallax {
-	position: fixed;
-	top:0;
-	left:0;
-	width: 100%;
-	height: auto;
-} */
-
-.bg-confetti {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	width: 100%;
-	height: inherit;
-	transform: translateX(-50%) translateZ(0);
-	animation: confetti linear infinite;
-}
-footer img:nth-child(1) {
-	animation-delay: -160s;
-	animation-duration: 40s;
-}
-footer img:nth-child(2) {
-	animation-delay: -120s;
-	animation-duration: 80s;
-}
-footer img:nth-child(3) {
-	animation-delay: -80s;
-	animation-duration: 120s;
-}
-footer img:nth-child(4) {
-	animation-delay: -40s;
-	animation-duration: 160s;
-}
-footer img:nth-child(5) {
-	animation-delay: 0s;
-	animation-duration: 200s;
+    footer .right .content-with-underline .social {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: fit-content;
+    }
 }
 
 /* ---Footer end--- */
