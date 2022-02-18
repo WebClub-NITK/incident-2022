@@ -10,8 +10,14 @@ for (el of card_images) {
   el.setAttribute("data-atropos-offset", "5%");
 }
 
-card__footer = document.getElementsByClassName("eventscard__footer");
+card_footer = document.getElementsByClassName("events-card__footer");
 
-for (el of card__footer) {
+for (el of card_footer) {
   el.setAttribute("data-atropos-offset", "4%");
+}
+
+card_info = document.getElementsByClassName("events-card__info");
+
+for (el of card_info) {
+  el.setAttribute("data-atropos-offset", "-4%");
 }
