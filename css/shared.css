@@ -1,0 +1,189 @@
+	*, *::after, *::before{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "signatra";
+	src: url("../assets/fonts/Signatra.otf")
+}
+
+/* ---Footer start--- */
+
+/* General footer styling */
+/* @import url('https:fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); */
+
+footer a, a:link, a:visited, a:focus, a:hover, a:active{
+	text-decoration: none;
+    color: #d9d9d9;
+}
+
+footer{
+	bottom: 0;
+	width: 100%;
+	background: rgb(1,1,1);
+	position: relative;
+    color: #d9d9d9;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	/* background-image: radial-gradient(circle at top left, #000, #3c4858); */
+}
+
+footer .main-content{
+    display: flex;
+    padding: 70px 0 30px 0;
+}
+
+footer .main-content .box{
+	flex-basis: 50%;
+	padding: 20px;
+}
+
+/* Box styling */
+footer .box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+}
+
+/* Content with underline */
+footer .box .content-with-underline{
+	margin: 20px 0 0 0;
+	position: relative;
+}
+
+footer .box .content-with-underline:before{
+	position: absolute;
+	content: '';
+	top: -10px;
+	height: 2px;
+	width: 100%;
+	background: #1a1a1a;
+}
+
+footer .box .content-with-underline:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 15%;
+	background: #1B98D7;
+	top: -10px;
+}
+
+/* Content without underline */
+footer .box .content{
+	margin: 20px 0 0 0;
+	position: relative;
+}
+
+footer .box .content:before{
+	position: absolute;
+	content: '';
+	top: -10px;
+	height: 2px;
+	width: 100%;
+
+}
+
+footer .box .content:after{
+	position: absolute;
+	content: '';
+	height: 2px;
+	width: 15%;
+	top: -10px;
+}
+
+/* Lets Connect section */
+.right .content-with-underline .social{
+	margin: 20px 0 0 0;
+}
+
+footer .right .content-with-underline .social a{
+	padding: 0 2px;
+}
+
+footer .right .content-with-underline .social a span{
+	height: 40px;
+	width: 40px;
+	background: #2685D8;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 100px;
+	transition: 0.3s;
+}
+
+footer .right .content-with-underline .social a span:hover{
+	background: #43abe7;
+}
+
+footer .right .content-with-underline .phone{
+	margin: 15px 0;
+}
+
+footer .right .content-with-underline .place .fas, .email .fas{
+	margin-right: 2px;
+}
+
+/* Links section */
+footer .text{
+	font-size: 1.0625rem;
+	font-weight: 300;
+}
+
+footer .content-with-underline .text {
+    text-decoration: none;
+}
+
+footer .content-with-underline .text a:hover {
+    color: #1B98D7;
+}
+
+
+/* Logo section */
+.footer-logo{
+	height: 100%;
+	width: 50%;
+	display: block;
+	margin: auto;
+}
+
+/* Credits section */
+.bottom center{
+	padding: 5px;
+	font-size: 0.8rem;
+}
+.bottom center span{
+	color: #c3c2c2;
+}
+.bottom center a{
+	color: #3498db;
+	text-decoration: none;
+}
+.bottom center a:hover{
+	text-decoration: underline;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 900px) {
+	footer{
+		position: relative;
+		bottom: 0px;
+	}
+	footer .main-content{
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	footer .main-content .box{
+		margin: 5px 0;
+        padding-left: 50px;
+        padding-right: 50px;
+	}
+    footer .right .content-with-underline .social {
+        margin: 0 auto;
+        margin-top: 20px;
+        width: fit-content;
+    }
+}
+
+/* ---Footer end--- */
