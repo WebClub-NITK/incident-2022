@@ -84,6 +84,16 @@ nav .large ul {
     align-items: center;
 }
 
+nav .large li a{
+    -webkit-transition: all 100ms ease-in 10ms;
+    -o-transition: all 100ms ease-in 10ms;
+    transition: all 100ms ease-in 10ms;
+}
+
+nav .large li a:hover{
+    border-bottom: 2px solid #ecf0f1;
+}
+
 nav #toggle-navbar {
     background: none;
     border: none;
