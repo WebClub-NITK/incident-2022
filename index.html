@@ -7,11 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Incident 2022</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap">
 </head>
 
 <body>
+    <nav id="navbar">
+        <div class="large">
+            <h3><a href="#">Incident 22</a></h3>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="icare.html">I-Care</a></li>
+                <li><a href="#footer">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="small-nav">
+            <h3><a href="#">Incident 22</a></h3>
+            <button id="toggle-navbar" onclick="navbarToggleFun()">
+                <div class="hamburger" id="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </button>
+        </div>
+        <ul class="small-nav-links small-nav" id="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="icare.html">I-Care</a></li>
+            <li><a href="#footer">Contact Us</a></li>
+        </ul>
+    </nav>
+
     <section id="landing-view">
         <ul id="landing-view-scene">
             <li data-depth="0.06" id="logo" class="layer">
@@ -40,7 +75,8 @@
                     <h1 class="titlename">Incident 22</h1>
                     <p class="themename">Realm of Reveries</p>
                 </div>
-                <svg id="scrolltrigger" width="70" height="70" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="scrolltrigger" width="70" height="70" viewBox="0 0 100 100" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g id="Frame 1">
                         <path id="outer"
                             d="M67.5 34V66C67.5 75.665 59.665 83.5 50 83.5C40.335 83.5 32.5 75.665 32.5 66V34C32.5 24.335 40.335 16.5 50 16.5C59.665 16.5 67.5 24.335 67.5 34Z"
@@ -55,19 +91,19 @@
     <div class="about-us-box">
         <h1 class="about-us-title">About Us</h1>
         <div class="about-us-content">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, sequi tempora? Laborum 
-                ipsum corrupti quo ex numquam porro, pariatur ipsam ducimus id maxime atque? Quo ullam 
-                sequi aliquid. Recusandae cupiditate consectetur officia, accusantium dolore rerum 
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, sequi tempora? Laborum
+                ipsum corrupti quo ex numquam porro, pariatur ipsam ducimus id maxime atque? Quo ullam
+                sequi aliquid. Recusandae cupiditate consectetur officia, accusantium dolore rerum
                 quod voluptatem, provident ullam quae placeat, fugit accusamus autem totam. Suscipit, ea?
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, sed?<br><br> Odit, magnam sequi. 
-                Perferendis illum eligendi asperiores est beatae corporis reprehenderit. 
-                Eum repellat repudiandae possimus non assumenda dolores voluptatibus vitae? Lorem ipsum dolor sit 
-                amet consectetur adipisicing elit. Quisquam, quidem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, consectetur expedita cumque debitis natus nihil quod. Accusamus ratione excepturi,
-                 quis reiciendis cumque nam error corporis! Adipisci molestiae recusandae voluptate dolor!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, sed?<br><br> Odit, magnam sequi.
+                Perferendis illum eligendi asperiores est beatae corporis reprehenderit.
+                Eum repellat repudiandae possimus non assumenda dolores voluptatibus vitae? Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Quisquam, quidem! Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Veniam, consectetur expedita cumque debitis natus nihil quod. Accusamus ratione excepturi,
+                quis reiciendis cumque nam error corporis! Adipisci molestiae recusandae voluptate dolor!
             </p>
         </div>
     </div>
-
 
     <script src="js/home.js"></script>
 </body>
