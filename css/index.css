@@ -359,6 +359,88 @@ body {
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
+  overflow-x: hidden;
+}
+
+.modal-content::before {
+  content: 'Incident';
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 26vw;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255,255,25,0.05);
+}
+
+.modal-content img{
+  transform: translateY(0);
+  max-height: 480px;
+  transition: transform 2s;
+}
+
+.modal-content img:hover {
+  transform: translateY(-5%);
+
+}
+
+.modal-content p{
+  font-size: 1.5rem;
+  margin: 30px;
+}
+
+.modal-content .button {
+  margin-top: 30px;
+  padding: 20px 30px;
+    background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  background: #2d304a;
+  box-shadow:  8px 8px 16px #25273d,
+               -8px -8px 16px #353957;
+  cursor: pointer;
+}
+
+.modal-event-content {
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-hero-image {
+  border-radius: 5px;
+  max-width: 100%;
+  margin-bottom: 60px;
+  border-radius: 30px;   
+  background: #362D53;
+  box-shadow:  12px 12px 24px #1f1a30, -12px -12px 24px #4d4076;
+}
+
+.modal-event-header {
+  margin-bottom: 50px;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .modal-event-content{
+    margin: 20px 0;
+  }
+
+  .modal-event-header{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .modal-content p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
 }
 
 /* Add Animation */
@@ -375,7 +457,7 @@ body {
 /* The Close Button */
 .close {
   color: white;
-  float: right;
+  /* float: right; */
   font-size: 28px;
   font-weight: bold;
   border: 1px solid white;
@@ -383,6 +465,9 @@ body {
   width: 32px;
   text-align: center;
   font-weight: 600;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .close:hover,
