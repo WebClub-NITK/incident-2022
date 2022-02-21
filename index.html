@@ -235,11 +235,14 @@
     var readmore_buttons = document.querySelectorAll(".events-custom-btn");
     for (let button of readmore_buttons) {
         button.onclick = function(event) {
-        console.log(event.target)
         modal.style.display = "block";
         modalContent = button.parentElement.nextElementSibling
         modalbody = document.querySelector(".modal-body")
-        modalbody.innerHTML = modalContent.innerHTML
+        if(!modalContent) {
+          modalbody.innerHTML = "Nothing to display here."
+        } else {
+          modalbody.innerHTML = modalContent.innerHTML
+        }
       }
     }
 
