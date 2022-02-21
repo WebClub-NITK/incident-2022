@@ -87,7 +87,7 @@ body {
 .events-header {
   margin: 20px auto;
   color: #a1dcf0;
-  font-family: "Shizuru", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.75rem;
   text-align: center;
 }
@@ -266,23 +266,65 @@ body {
 .events-btn-11:active {
   transform: translateY(2px);
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 426px) {
   .events-content {
     margin: 25px;
     text-align: center;
   }
+  .events-card__image{
+    height:15rem;  
+  }
+  .events-tags{
+    display: none;
+    height: 0px;
+    width: 0px;
+    margin: 0px;
+    width: 0px;
+  }
   .events-h3 {
-    margin: auto;
+    margin:10px;
   }
   .events-card {
     margin: auto;
-    width: 65%;
+    width: 85%;
+  }
+
+  .events-card__body{
+    padding:1rem;
+    font-size: small;
   }
   .events-card__footer {
     flex-direction: column;
     align-items: center;
+    padding: 0px;
   }
   .events-custom-btn {
-    margin: 15px 0px;
+    margin: 0.75rem;
+  }
+}
+@media only screen and (max-width: 376px) {
+  .events-card__image{
+    height:11rem;  
+  }
+  .events-card__body h3 {
+    margin: 0.5rem;
+    padding: 0px;
+  }
+  .events-card {
+    margin: auto;
+    width: 85%;
+  }
+
+  .events-card__body{
+    padding: 0rem 0.5rem;
+    font-size: small;
+  }
+  .events-card__footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+  .events-custom-btn {
+    margin: 0px 0px 7.5px 0px;
   }
 }

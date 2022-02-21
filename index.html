@@ -9,18 +9,18 @@
   <link rel="stylesheet" href="css/index.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <title>INCIDENT 2022</title>
 </head>
 
 <body>
   <div class="events-container">
     <div class="events-parallax">
-      <img src="assets/img/xl.svg" id="events-xl"/>
-      <img src="assets/img/lg.svg" id="events-lg"/>
-      <img src="assets/img/md.svg" id="events-md"/>
-      <img src="assets/img/sm.svg" id="events-sm"/>
-      <img src="assets/img/xs.svg" id="events-xs"/>
+      <img src="assets/img/xl.svg" id="events-xl" />
+      <img src="assets/img/lg.svg" id="events-lg" />
+      <img src="assets/img/md.svg" id="events-md" />
+      <img src="assets/img/sm.svg" id="events-sm" />
+      <img src="assets/img/xs.svg" id="events-xs" />
     </div>
   </div>
   <div class="events-content">
@@ -45,7 +45,7 @@
                     <span class="events-tag events-tag-red">events-tag2</span>
                   </div>
                   <h3>EVENT-1</h3>
-                  <p>
+                  <p class="events-card__info">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sequi perferendis molestiae non nemo doloribus.
                     Doloremque, nihil! At ea atque quidem!
@@ -82,7 +82,7 @@
                     <span class="events-tag events-tag-blue">events-tag3</span>
                   </div>
                   <h3>EVENT-2</h3>
-                  <p>
+                  <p class="events-card__info">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sequi perferendis molestiae non nemo doloribus.
                     Doloremque, nihil! At ea atque quidem!
@@ -120,7 +120,7 @@
                     <span class="events-tag events-tag-red">events-tag3</span>
                   </div>
                   <h3>EVENT-3</h3>
-                  <p>
+                  <p class="events-card__info">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sequi perferendis molestiae non nemo doloribus.
                     Doloremque, nihil! At ea atque quidem!
@@ -156,7 +156,7 @@
                     <span class="events-tag events-tag-blue">events-tag3</span>
                   </div>
                   <h3>EVENT-4</h3>
-                  <p>
+                  <p class="events-card__info">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Sequi perferendis molestiae non nemo doloribus.
                     Doloremque, nihil! At ea atque quidem!
@@ -184,7 +184,7 @@
     document.querySelectorAll(".my-atropos").forEach((element) => {
       Atropos({
         el: element,
-        activeOffset: 30,
+        activeOffset: -50,
         highlight: false,
       });
     });
