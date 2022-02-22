@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <title>INCIDENT 2022</title>
 </head>
 
@@ -23,163 +24,205 @@
       <img src="assets/img/xs.svg" id="events-xs" />
     </div>
   </div>
-  <div class="events-content">
+  <div class="events-content" x-data="loadEvents()">
     <div class="events-header">
       <h1>EVENTS</h1>
+      <div class="events-navigation">
+        <ul>
+          <li><a href="#lit-events">Lit Events</a></li>
+          <li><a href="#biz-events">Biz Events</a></li>
+          <li><a href="#music-dance-events">Music & Dance Events</a></li>
+          <li><a href="#special-events">Specials</a></li>
+          <li><a href="#">Pro Shows</a></li>
+        </ul>
+      </div>
+      <div class="events-day-filters">
+        <button @click="active='0'" :class="active==0 && 'active'" class="day-filter-btn">All</button>
+        <button @click="active='1'" :class="active==1 && 'active'" class="day-filter-btn">Day 1</button>
+        <button @click="active='2'" :class="active==2 && 'active'" class="day-filter-btn">Day 2</button>
+        <button @click="active='3'" :class="active==3 && 'active'" class="day-filter-btn">Day 3</button>
+        <button @click="active='4'" :class="active==4 && 'active'" class="day-filter-btn">Day 4</button>
+      </div>
     </div>
-    <div class="events-cards">
-      <div class="atropos my-atropos">
-        <!-- scale container (required) -->
-        <div class="atropos-scale">
-          <!-- rotate container (required) -->
-          <div class="atropos-rotate">
-            <!-- inner container (required) -->
-            <div class="atropos-inner">
-              <div class="events-card">
-                <div class="events-card__header">
-                  <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image" width="600" />
-                </div>
-                <div class="events-card__body">
-                  <div class="events-tags">
-                    <span class="events-tag events-tag-blue">events-tag1</span>
-                    <span class="events-tag events-tag-red">events-tag2</span>
-                  </div>
-                  <h3>EVENT-1</h3>
-                  <p class="events-card__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi perferendis molestiae non nemo doloribus.
-                    Doloremque, nihil! At ea atque quidem!
-                  </p>
-                </div>
-                <div class="events-card__footer">
-                  <div class="events-left">
-                    <h5>[Events - 3]</h5>
-                  </div>
-                  <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+    <div class="events-sections">
+      <div class="events-cards" id="lit-events">
+        <h2>Literary Events</h2>
+        <template x-for="event in filteredLit" :key="event.title">
+          <div class="atropos my-atropos">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+              <!-- rotate container (required) -->
+              <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <div class="events-tags">
+                        <span class="events-tag events-tag-blue">events-tag1</span>
+                        <span class="events-tag events-tag-red">events-tag2</span>
                       </div>
+                      <h3>EVENT-1</h3>
+                      <p class="events-card__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi perferendis molestiae non nemo doloribus.
+                        Doloremque, nihil! At ea atque quidem!
+                      </p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5>[Events - 3]</h5>
+                      </div>
+                      <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div
+                            class="dot">
+                          </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </template>
       </div>
-      <div class="atropos my-atropos">
-        <!-- scale container (required) -->
-        <div class="atropos-scale">
-          <!-- rotate container (required) -->
-          <div class="atropos-rotate">
-            <!-- inner container (required) -->
-            <div class="atropos-inner">
-              <div class="events-card">
-                <div class="events-card__header">
-                  <img src="assets/img/cover2.jpg" alt="events-card__image" class="events-card__image" width="600" />
-                </div>
-                <div class="events-card__body">
-                  <div class="events-tags">
-                    <span class="events-tag events-tag-brown">events-tag1</span>
-                    <span class="events-tag events-tag-red">events-tag2</span>
-                    <span class="events-tag events-tag-blue">events-tag3</span>
-                  </div>
-                  <h3>EVENT-2</h3>
-                  <p class="events-card__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi perferendis molestiae non nemo doloribus.
-                    Doloremque, nihil! At ea atque quidem!
-                  </p>
-                </div>
-                <div class="events-card__footer">
-                  <div class="events-left">
-                    <h5>[Events - 3]</h5>
-                  </div>
-                  <div class="events-right"><button class="events-custom-btn events-btn-11">Read More<div class="dot">
+      <div class="events-cards" id="biz-events">
+        <h2>Biz Events</h2>
+        <template x-for="event in filteredBiz" :key="event.title">
+          <div class="atropos my-atropos">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+              <!-- rotate container (required) -->
+              <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <div class="events-tags">
+                        <span class="events-tag events-tag-blue">events-tag1</span>
+                        <span class="events-tag events-tag-red">events-tag2</span>
                       </div>
+                      <h3>EVENT-1</h3>
+                      <p class="events-card__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi perferendis molestiae non nemo doloribus.
+                        Doloremque, nihil! At ea atque quidem!
+                      </p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5>[Events - 3]</h5>
+                      </div>
+                      <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div
+                            class="dot">
+                          </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </template>
       </div>
-
-      <div class="atropos my-atropos">
-        <!-- scale container (required) -->
-        <div class="atropos-scale">
-          <!-- rotate container (required) -->
-          <div class="atropos-rotate">
-            <!-- inner container (required) -->
-            <div class="atropos-inner">
-              <div class="events-card">
-                <div class="events-card__header">
-                  <img src="assets/img/cover3.jpg" alt="events-card__image" class="events-card__image" width="600" />
-                </div>
-                <div class="events-card__body">
-                  <div class="events-tags">
-                    <span class="events-tag events-tag-red">events-tag1</span>
-                    <span class="events-tag events-tag-brown">events-tag2</span>
-                    <span class="events-tag events-tag-red">events-tag3</span>
-                  </div>
-                  <h3>EVENT-3</h3>
-                  <p class="events-card__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi perferendis molestiae non nemo doloribus.
-                    Doloremque, nihil! At ea atque quidem!
-                  </p>
-                </div>
-                <div class="events-card__footer">
-                  <div class="events-left">
-                    <h5>[Events - 3]</h5>
-                  </div>
-                  <div class="events-right"><button class="events-custom-btn events-btn-11">Read More<div class="dot">
+      <div class="events-cards" id="music-dance-events">
+        <h2>Music & Dance</h2>
+        <template x-for="event in filteredMD" :key="event.title">
+          <div class="atropos my-atropos">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+              <!-- rotate container (required) -->
+              <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <div class="events-tags">
+                        <span class="events-tag events-tag-blue">events-tag1</span>
+                        <span class="events-tag events-tag-red">events-tag2</span>
                       </div>
+                      <h3>EVENT-1</h3>
+                      <p class="events-card__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi perferendis molestiae non nemo doloribus.
+                        Doloremque, nihil! At ea atque quidem!
+                      </p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5>[Events - 3]</h5>
+                      </div>
+                      <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div
+                            class="dot">
+                          </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </template>
       </div>
-      <div class="atropos my-atropos">
-        <!-- scale container (required) -->
-        <div class="atropos-scale">
-          <!-- rotate container (required) -->
-          <div class="atropos-rotate">
-            <!-- inner container (required) -->
-            <div class="atropos-inner">
-              <div class="events-card">
-                <div class="events-card__header">
-                  <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image" width="600" />
-                </div>
-                <div class="events-card__body">
-                  <div class="events-tags">
-                    <span class="events-tag events-tag-red">events-tag1</span>
-                    <span class="events-tag events-tag-blue">events-tag3</span>
-                  </div>
-                  <h3>EVENT-4</h3>
-                  <p class="events-card__info">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sequi perferendis molestiae non nemo doloribus.
-                    Doloremque, nihil! At ea atque quidem!
-                  </p>
-                </div>
-                <div class="events-card__footer">
-                  <div class="events-left">
-                    <h5>[Events - 3]</h5>
-                  </div>
-                  <div class="events-right"><button class="events-custom-btn events-btn-11">Read More<div class="dot">
+      <div class="events-cards" id="special-events">
+        <h2>Specials</h2>
+        <template x-for="event in filteredSpecials" :key="event.title">
+          <div class="atropos my-atropos">
+            <!-- scale container (required) -->
+            <div class="atropos-scale">
+              <!-- rotate container (required) -->
+              <div class="atropos-rotate">
+                <!-- inner container (required) -->
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <div class="events-tags">
+                        <span class="events-tag events-tag-blue">events-tag1</span>
+                        <span class="events-tag events-tag-red">events-tag2</span>
                       </div>
+                      <h3>EVENT-1</h3>
+                      <p class="events-card__info">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi perferendis molestiae non nemo doloribus.
+                        Doloremque, nihil! At ea atque quidem!
+                      </p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5>[Events - 3]</h5>
+                      </div>
+                      <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div
+                            class="dot">
+                          </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </template>
       </div>
     </div>
   </div>
   </div>
   <script src="assets/atropos.min.js"></script>
   <script src="js/index.js"></script>
+  <script src="js/events.js"></script>
   <script>
     document.querySelectorAll(".my-atropos").forEach((element) => {
       Atropos({
@@ -188,6 +231,30 @@
         highlight: false,
       });
     });
+
+
+    function loadEvents() {
+      return {
+        active: '2',
+        all_events: all_events,
+        get filteredLit() {
+          if (this.active == "0") return this.all_events.filter(e => e.type === "Literary");
+          return this.all_events.filter(e => e.type === "Literary" && e.days.includes(`${this.active}`));
+        },
+        get filteredBiz() {
+          if (this.active == "0") return this.all_events.filter(e => e.type === "Biz");
+          return this.all_events.filter(e => e.type === "Biz" && e.days.includes(`${this.acitve}`));
+        },
+        get filteredMD() {
+          if (this.active == "0") return this.all_events.filter(e => e.type === "Music_Dance");
+          return this.all_events.filter(e => e.type === "Music_Dance" && e.days.includes(`${this.acitve}`));
+        },
+        get filteredSpecials() {
+          if (this.active == "0") return this.all_events.filter(e => e.type === "Specials");
+          return this.all_events.filter(e => e.type === "Specials" && e.days.includes(`${this.acitve}`));
+        }
+      }
+    }
   </script>
 </body>
 

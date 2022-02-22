@@ -85,11 +85,54 @@ body {
 }
 
 .events-header {
-  margin: 20px auto;
+  margin: 30px;
   color: #a1dcf0;
   font-family: 'Poppins', sans-serif;
   font-size: 1.75rem;
   text-align: center;
+  position: fixed;
+}
+
+.events-header ul {
+  text-align: left;
+  list-style: none;
+}
+
+.events-header a {
+  color: white;
+  text-decoration: none;
+}
+
+.events-header h1 {
+  font-size: 7rem;
+}
+
+.events-day-filters {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 2rem 0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #091627, #0b1a2e);
+  box-shadow:  7px 7px 15px #060e19,
+               -7px -7px 15px #0e223d;
+}
+
+.day-filter-btn {
+  color: white;
+  font-size: 0.97rem;
+  flex: 1;
+  padding: 10px;
+  font-family: 'Poppins';
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.day-filter-btn.active {
+  color: #0A182B;
+  background-color: #F1BE48;
+  border-radius: 10px;
 }
 
 *,
@@ -98,17 +141,29 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
+
 .events-cards {
-  margin: auto;
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px;
-  margin-block: 2rem;
   gap: 2rem;
+  width: 70vw;
+  padding-top: 10rem;
+  position: relative;
 }
+
+.events-cards h2 {
+  position: absolute;
+  color: white;
+  font-family: 'Poppins';
+  font-size: 3.5rem;
+  top: 4.5rem;
+}
+
 .events-card__image {
   height: 15em;
   max-width: 100%;
@@ -266,11 +321,52 @@ body {
 .events-btn-11:active {
   transform: translateY(2px);
 }
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 1200px) {
   .events-content {
     margin: 25px;
     text-align: center;
   }
+  
+  .events-cards {
+    width: auto;
+  }
+  
+  .events-cards {
+    padding-top: 8rem;
+  }
+  .events-cards:first-of-type {
+    padding-top: 6rem;
+  }
+  
+  .events-cards h2 {
+    font-size: 2rem;
+    top: 4rem;
+  }
+  
+  .events-cards:first-of-type h2 {
+    top: 2rem;
+  }
+  
+  
+  .events-header {
+    position: relative;
+    margin: 0;
+  }
+  
+  .events-header h1 {
+    font-size: 5rem;
+  }
+  
+  .events-header li {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+}
+
+@media only screen and (max-width: 426px) {
+
   .events-card__image{
     height:15rem;  
   }
@@ -301,6 +397,9 @@ body {
   .events-custom-btn {
     margin: 0.75rem;
   }
+  .day-filter-btn {
+    font-size: 0.78rem;
+  }
 }
 @media only screen and (max-width: 376px) {
   .events-card__image{
@@ -326,5 +425,9 @@ body {
   }
   .events-custom-btn {
     margin: 0px 0px 7.5px 0px;
+  }
+
+  .day-filter-btn {
+    font-size: 0.7rem;
   }
 }
