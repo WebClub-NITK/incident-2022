@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <title>INCIDENT 2022</title>
 </head>
 
@@ -24,7 +23,7 @@
       <img src="assets/img/xs.svg" id="events-xs" />
     </div>
   </div>
-  <div class="events-content" x-data="loadEvents()">
+  <div id="events-data-source" class="events-content" x-data="loadEvents()">
     <div class="events-header">
       <h1>EVENTS</h1>
       <div class="events-navigation">
@@ -47,94 +46,12 @@
     <div class="events-sections">
       <div class="events-cards" id="lit-events">
         <h2>Literary Events</h2>
-        <template x-for="event in filteredLit" :key="event.title">
-          <div class="atropos my-atropos">
-            <!-- scale container (required) -->
-            <div class="atropos-scale">
-              <!-- rotate container (required) -->
-              <div class="atropos-rotate">
-                <!-- inner container (required) -->
-                <div class="atropos-inner">
-                  <div class="events-card">
-                    <div class="events-card__header">
-                      <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image"
-                        width="600" />
-                    </div>
-                    <div class="events-card__body">
-                      <!-- <div class="events-tags">
-                        <span class="events-tag events-tag-blue">events-tag1</span>
-                        <span class="events-tag events-tag-red">events-tag2</span>
-                      </div> -->
-                      <h3>EVENT-1</h3>
-                      <p class="events-card__info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi perferendis molestiae non nemo doloribus.
-                        Doloremque, nihil! At ea atque quidem!
-                      </p>
-                    </div>
-                    <div class="events-card__footer">
-                      <div class="events-left">
-                        <h5>[Events - 3]</h5>
-                      </div>
-                      <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div
-                            class="dot">
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </template>
+
       </div>
       <div class="events-cards" id="biz-events">
         <h2>Biz Events</h2>
-        <template x-for="event in filteredBiz" :key="event.title">
-          <div class="atropos my-atropos">
-            <!-- scale container (required) -->
-            <div class="atropos-scale">
-              <!-- rotate container (required) -->
-              <div class="atropos-rotate">
-                <!-- inner container (required) -->
-                <div class="atropos-inner">
-                  <div class="events-card">
-                    <div class="events-card__header">
-                      <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image"
-                        width="600" />
-                    </div>
-                    <div class="events-card__body">
-                      <div class="events-tags">
-                        <span class="events-tag events-tag-blue">events-tag1</span>
-                        <span class="events-tag events-tag-red">events-tag2</span>
-                      </div>
-                      <h3>EVENT-1</h3>
-                      <p class="events-card__info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi perferendis molestiae non nemo doloribus.
-                        Doloremque, nihil! At ea atque quidem!
-                      </p>
-                    </div>
-                    <div class="events-card__footer">
-                      <div class="events-left">
-                        <h5>[Events - 3]</h5>
-                      </div>
-                      <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div
-                            class="dot">
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </template>
-      </div>
-      <div class="events-cards" id="music-dance-events">
-        <h2>Music & Dance</h2>
-        <template x-for="event in filteredMD" :key="event.title">
-          <div class="atropos my-atropos">
+        <template x-for="event in all_events" :key="event.title">
+          <div x-show="showfn(active, 'Biz', event.type, event.days)" class="atropos my-atropos">
             <!-- scale container (required) -->
             <div class="atropos-scale">
               <!-- rotate container (required) -->
@@ -154,10 +71,25 @@
                       <div class="events-left">
                         <h5 x-text="getDateString(event.days)"></h5>
                       </div>
-                      <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div
-                            class="dot">
+                      <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
                           </div>
                       </div>
+                      <div style="display: none;">
+                        <div class="modal-event-content">
+                          <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
+
+                          <div class="modal-event-header">
+                            <h1 x-text="event_.title"></h1>
+                          </div>
+
+                          <p x-text="event_.desc"></p>
+
+                          <div class="button">Register</div>
+
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -166,10 +98,10 @@
           </div>
         </template>
       </div>
-      <div class="events-cards" id="special-events">
-        <h2>Specials</h2>
-        <template x-for="event in filteredSpecials" :key="event.title">
-          <div class="atropos my-atropos">
+      <div class="events-cards" id="music-dance-events">
+        <h2>Music & Dance</h2>
+        <template x-for="event in all_events" :key="event.title">
+          <div x-show="showfn(active, 'Music_Dance', event.type, event.days)" class="atropos my-atropos">
             <!-- scale container (required) -->
             <div class="atropos-scale">
               <!-- rotate container (required) -->
@@ -182,25 +114,32 @@
                         width="600" />
                     </div>
                     <div class="events-card__body">
-                      <div class="events-tags">
-                        <span class="events-tag events-tag-blue">events-tag1</span>
-                        <span class="events-tag events-tag-red">events-tag2</span>
-                      </div>
-                      <h3>EVENT-1</h3>
-                      <p class="events-card__info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi perferendis molestiae non nemo doloribus.
-                        Doloremque, nihil! At ea atque quidem!
-                      </p>
+                      <h3 x-text="event.title"></h3>
+                      <p x-text="event.tagline" class="events-card__info"></p>
                     </div>
                     <div class="events-card__footer">
                       <div class="events-left">
-                        <h5>[Events - 3]</h5>
+                        <h5 x-text="getDateString(event.days)"></h5>
                       </div>
-                      <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div
-                            class="dot">
+                      <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
                           </div>
                       </div>
+                      <div style="display: none;">
+                        <div class="modal-event-content">
+                          <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
+
+                          <div class="modal-event-header">
+                            <h1 x-text="event_.title"></h1>
+                          </div>
+
+                          <p x-text="event_.desc"></p>
+
+                          <div class="button">Register</div>
+
+                        </div>
+                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -209,51 +148,103 @@
           </div>
         </template>
       </div>
+      <div class="events-cards" id="special-events">
+        <h2>Specials</h2>
+
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+        </div>
+      </div>
     </div>
   </div>
-  </div>
+
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <script src="assets/atropos.min.js"></script>
-  <script src="js/index.js"></script>
   <script src="js/events.js"></script>
   <script>
-    document.querySelectorAll(".my-atropos").forEach((element) => {
-      Atropos({
-        el: element,
-        activeOffset: -50,
-        highlight: false,
-      });
-    });
+    setTimeout(() => {
+      tags = document.getElementsByClassName("events-tags");
 
+      for (el of tags) {
+        el.setAttribute("data-atropos-offset", "-4%");
+      }
+
+      card_images = document.getElementsByClassName("events-card__image");
+
+      for (el of card_images) {
+        el.setAttribute("data-atropos-offset", "5%");
+      }
+
+      card_footer = document.getElementsByClassName("events-card__footer");
+
+      for (el of card_footer) {
+        el.setAttribute("data-atropos-offset", "4%");
+      }
+
+      card_info = document.getElementsByClassName("events-card__info");
+
+      for (el of card_info) {
+        el.setAttribute("data-atropos-offset", "-4%");
+      }
+
+      document.querySelectorAll(".my-atropos").forEach((element) => {
+        Atropos({
+          el: element,
+          activeOffset: -50,
+          highlight: false,
+        });
+      });
+    }, 100);
+
+    function showfn(active, type, event_type, event_days) {
+      if (event_type !== type) return false;
+      if (active == 0) return true;
+      for (let i = 0; i < event_days.length; i++) {
+        if (event_days[i] == active) return true;
+      }
+      return false;
+    }
 
     function loadEvents() {
       return {
         active: '0',
         all_events: all_events,
-        get filteredLit() {
-          if (this.active == "0") return this.all_events.filter(e => e.type === "Literary");
-          return this.all_events.filter(e => e.type === "Literary" && e.days.includes(`${this.active}`));
-        },
-        get filteredBiz() {
-          if (this.active == "0") return this.all_events.filter(e => e.type === "Biz");
-          return this.all_events.filter(e => e.type === "Biz" && e.days.includes(`${this.acitve}`));
-        },
-        get filteredMD() {
-          console.log(["1"].includes(`${this.active}`));
-          this.all_events.filter(e => e.type === "Music_Dance").forEach(e => console.log(this.active, Array.of(e.days), Array.of(e.days).includes(this.acitve)));
-          if (this.active == "0") return this.all_events.filter(e => e.type === "Music_Dance");
-          return this.all_events.filter(e => e.type === "Music_Dance" && e.days.includes(`${this.acitve}`));
-        },
-        get filteredSpecials() {
-          if (this.active == "0") return this.all_events.filter(e => e.type === "Specials");
-          return this.all_events.filter(e => e.type === "Specials" && e.days.includes(`${this.acitve}`));
-        }
+        event_: all_events[0]
       }
     }
 
-    function getDateString (dates) {
-      if(dates.length===1) return `${parseInt(dates[0]+2)} March`
-      return `${parseInt(dates[0]+2)}-${parseInt(dates[dates.length-1]+2)} March` 
+    function getDateString(dates) {
+      if (dates.length === 1) return `${parseInt(dates[0]) + 2} March`
+      return `${parseInt(dates[0])+ 2}-${parseInt(dates[dates.length - 1]) + 2} March`
     }
+
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    window.buttonClick = function (event, event_data) {
+      const modalContent = event.target.parentElement.nextElementSibling;
+      const modalbody = document.querySelector(".modal-body");
+      modalbody.innerHTML = modalContent.innerHTML;
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
   </script>
 </body>
 
