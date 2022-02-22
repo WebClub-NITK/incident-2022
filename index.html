@@ -61,10 +61,10 @@
                         width="600" />
                     </div>
                     <div class="events-card__body">
-                      <div class="events-tags">
+                      <!-- <div class="events-tags">
                         <span class="events-tag events-tag-blue">events-tag1</span>
                         <span class="events-tag events-tag-red">events-tag2</span>
-                      </div>
+                      </div> -->
                       <h3>EVENT-1</h3>
                       <p class="events-card__info">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -147,20 +147,12 @@
                         width="600" />
                     </div>
                     <div class="events-card__body">
-                      <div class="events-tags">
-                        <span class="events-tag events-tag-blue">events-tag1</span>
-                        <span class="events-tag events-tag-red">events-tag2</span>
-                      </div>
-                      <h3>EVENT-1</h3>
-                      <p class="events-card__info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Sequi perferendis molestiae non nemo doloribus.
-                        Doloremque, nihil! At ea atque quidem!
-                      </p>
+                      <h3 x-text="event.title"></h3>
+                      <p x-text="event.tagline" class="events-card__info"></p>
                     </div>
                     <div class="events-card__footer">
                       <div class="events-left">
-                        <h5>[Events - 3]</h5>
+                        <h5 x-text="getDateString(event.days)"></h5>
                       </div>
                       <div class="events-right"><button class="events-custom-btn events-btn-11" ;>Read More<div
                             class="dot">
@@ -235,7 +227,7 @@
 
     function loadEvents() {
       return {
-        active: '2',
+        active: '0',
         all_events: all_events,
         get filteredLit() {
           if (this.active == "0") return this.all_events.filter(e => e.type === "Literary");
@@ -246,6 +238,8 @@
           return this.all_events.filter(e => e.type === "Biz" && e.days.includes(`${this.acitve}`));
         },
         get filteredMD() {
+          console.log(["1"].includes(`${this.active}`));
+          this.all_events.filter(e => e.type === "Music_Dance").forEach(e => console.log(this.active, Array.of(e.days), Array.of(e.days).includes(this.acitve)));
           if (this.active == "0") return this.all_events.filter(e => e.type === "Music_Dance");
           return this.all_events.filter(e => e.type === "Music_Dance" && e.days.includes(`${this.acitve}`));
         },
@@ -254,6 +248,11 @@
           return this.all_events.filter(e => e.type === "Specials" && e.days.includes(`${this.acitve}`));
         }
       }
+    }
+
+    function getDateString (dates) {
+      if(dates.length===1) return `${parseInt(dates[0]+2)} March`
+      return `${parseInt(dates[0]+2)}-${parseInt(dates[dates.length-1]+2)} March` 
     }
   </script>
 </body>

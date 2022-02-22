@@ -164,6 +164,10 @@ body {
   top: 4.5rem;
 }
 
+.events-card__info {
+  min-height: 2em;
+}
+
 .events-card__image {
   height: 15em;
   max-width: 100%;
@@ -186,6 +190,8 @@ body {
   background: #2f80ed;
   color: whitesmoke;
   background: radial-gradient(#2f80ed, #0f2646);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 .events-card__body {
@@ -231,7 +237,7 @@ body {
 }
 
 .events-card__body h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: capitalize;
 }
 
