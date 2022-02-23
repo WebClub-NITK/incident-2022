@@ -5,15 +5,49 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="List of events for Incident 2022">
+  <meta name="og:title" property="og:title" content="Incident 2022 Events">
   <link rel="stylesheet" href="assets/atropos.min.css" />
-  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/events.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <title>INCIDENT 2022</title>
+  <title>Events | Incident 2022</title>
 </head>
 
 <body>
+  <nav id="navbar">
+    <div class="large">
+      <h3><a href="/">Incident 22</a></h3>
+      <ul class="nav-links">
+        <li><a href="/#about">About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="sponsors">Sponsors</a></li>
+        <li><a href="icare">I-Care</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="small-nav">
+      <h3><a href="/">Incident 22</a></h3>
+      <button id="toggle-navbar" onclick="navbarToggleFun()">
+        <div class="hamburger" id="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </button>
+    </div>
+    <ul class="small-nav-links small-nav" id="mobile-nav-links">
+      <li><a href="/#about">About</a></li>
+      <li><a href="#">Events</a></li>
+      <li><a href="sponsors">Sponsors</a></li>
+      <li><a href="icare">I-Care</a></li>
+      <li><a href="#footer">Contact Us</a></li>
+    </ul>
+  </nav>
   <div class="events-container">
     <div class="events-parallax">
       <img src="assets/img/xl.svg" id="events-xl" />
@@ -166,6 +200,84 @@
   </div>
 
 
+  <!-- Footer -->
+  <footer>
+    <!-- <div class="parallax">
+        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-xl-arcade.svg;"
+            class="bg-confetti">
+        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-lg-arcade.svg;"
+            class="bg-confetti">
+        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-md-arcade.svg;"
+            class="bg-confetti">
+        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-sm-arcade.svg;"
+            class="bg-confetti">
+        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-xs-arcade.svg"
+            class="bg-confetti">
+    </div> -->
+    <div class="main-content">
+      <div class="left box">
+        <div class="content">
+          <img src="./assets/landing_view/Merged logo.png" alt="incident-logo" class="footer-logo">
+        </div>
+      </div>
+
+      <div class="center box">
+        <h2>Links</h2>
+        <div class="content-with-underline">
+          <div>
+            <span class="text"><a href="/">Home</a></span>
+          </div>
+          <div>
+            <span class="text"><a href="/#about">About</a></span>
+          </div>
+          <div>
+            <span class="text"><a href="events">Events</a></span>
+          </div>
+          <div>
+            <span class="text"><a href="sponsors">Sponsors</a></span>
+          </div>
+          <div>
+            <span class="text"><a href="icare">ICare</a></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right box">
+        <h2>Let's Connect</h2>
+        <div class="content-with-underline">
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text"> <a href="https://goo.gl/maps/UqL9MZtEnLeQb7jc8">NITK Surathkal,<br />Mangalore,
+                  Karnataka - 575025</a></span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">99999 99999 </span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text"><a href="mailto:incident@nitk.edu.in">incident@nitk.edu.in</a></span>
+            </div>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/incidenttheofficialpage/"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://twitter.com/incident_nitk"><span class="fab fa-twitter"></span></a>
+            <a href="https://www.instagram.com/incident_nitk/"><span class="fab fa-instagram"></span></a>
+            <a href="https://www.youtube.com/channel/UC-_WeDFW_i7-GnGNJiun9_Q"><span class="fab fa-youtube"></span></a>
+            <a href="https://www.linkedin.com/company/incident-nitk2020/"><span class="fab fa-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center>
+        <span class="credit">Created By Incident NITK </a> | </span>
+        <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+      </center>
+    </div>
+  </footer>
+
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <script src="assets/atropos.min.js"></script>
   <script src="js/events.js"></script>
@@ -223,7 +335,7 @@
 
     function getDateString(dates) {
       if (dates.length === 1) return `${parseInt(dates[0]) + 2} March`
-      return `${parseInt(dates[0])+ 2}-${parseInt(dates[dates.length - 1]) + 2} March`
+      return `${parseInt(dates[0]) + 2}-${parseInt(dates[dates.length - 1]) + 2} March`
     }
 
 
@@ -243,6 +355,10 @@
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
       modal.style.display = "none";
+    }
+
+    function navbarToggleFun() {
+      document.getElementById('navbar').classList.toggle('open');
     }
 
   </script>

@@ -18,8 +18,11 @@
 
 body {
   margin: 0px;
-  padding: 1rem;
   background: #0a182b;
+}
+
+.events-content{
+  padding: 1rem;
 }
 
 .events-container {
@@ -88,7 +91,7 @@ body {
   margin: 30px;
   color: #a1dcf0;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.75rem;
+  font-size: 1.3rem;
   text-align: center;
   position: fixed;
 }
@@ -104,14 +107,15 @@ body {
 }
 
 .events-header h1 {
-  font-size: 7rem;
+  margin-top: 1rem;
+  font-size: 6rem;
 }
 
 .events-day-filters {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   border-radius: 10px;
   background: linear-gradient(145deg, #091627, #0b1a2e);
   box-shadow:  7px 7px 15px #060e19,
@@ -120,7 +124,7 @@ body {
 
 .day-filter-btn {
   color: white;
-  font-size: 0.97rem;
+  font-size: 0.9rem;
   flex: 1;
   padding: 10px;
   font-family: 'Poppins';
