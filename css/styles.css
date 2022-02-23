@@ -27,7 +27,6 @@
 
 body {
     margin: 0px;
-    padding: 1rem;
     background: #0a182b;
 }
 
@@ -103,12 +102,12 @@ body {
   
 
 .sponsors-header {
-    margin: 20px auto;
-    color: #a1dcf0;
+    margin-top: 8rem;
+  color: #a1dcf0;
     font-family: 'Poppins', sans-serif;
     font-size: 1.75rem;
     text-align: center;
-    margin-bottom: 7rem;
+    margin-bottom: 4%;
 }
 
 .image-container img {
@@ -117,11 +116,11 @@ body {
 }
 
 .card {
-    width: 30rem;
+    width: 21rem;
     background-color: #fff; 
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 7rem; 
+    margin-bottom: 4rem; 
     height: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -135,9 +134,13 @@ body {
 }
 
 .card-hr {
-    margin: 0 auto;
-    width: 80%;
-    border-top: 0.3rem solid black;
+    color: black !important;
+    background-color: #000 !important;
+    display: block;
+    margin: 0 auto !important;
+    width: 80% !important;
+    border-color: black !important;
+    border-top: 0.18rem solid #000 !important;
 }
 
 .row {
@@ -154,7 +157,8 @@ body {
 }
 
 .image-container {
-    height: 18rem;
+    padding:1.3rem;
+    height: 12.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
