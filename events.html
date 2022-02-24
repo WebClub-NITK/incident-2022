@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="List of events for Incident 2022">
+  <meta name="og:title" property="og:title" content="Incident 2022 Events">
+  <link rel="stylesheet" href="assets/atropos.min.css" />
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/events.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>Events | Incident 2022</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div class="large">
+      <h3><a href="/">Incident 22</a></h3>
+      <ul class="nav-links">
+        <li><a href="/#about">About</a></li>
+        <li><a href="#">Events</a></li>
+        <!-- <li><a href="sponsors">Sponsors</a></li> -->
+        <!-- <li><a href="icare">I-Care</a></li> -->
+        <li><a href="#footer">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="small-nav">
+      <h3><a href="/">Incident 22</a></h3>
+      <button id="toggle-navbar" onclick="navbarToggleFun()">
+        <div class="hamburger" id="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </button>
+    </div>
+    <ul class="small-nav-links small-nav" id="mobile-nav-links">
+      <li><a href="/#about">About</a></li>
+      <li><a href="#">Events</a></li>
+      <!-- <li><a href="sponsors">Sponsors</a></li> -->
+      <!-- <li><a href="icare">I-Care</a></li> -->
+      <li><a href="#footer">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="events-container">
+    <div class="events-parallax">
+      <img src="assets/img/xl.svg" id="events-xl" />
+      <img src="assets/img/lg.svg" id="events-lg" />
+      <img src="assets/img/md.svg" id="events-md" />
+      <img src="assets/img/sm.svg" id="events-sm" />
+      <img src="assets/img/xs.svg" id="events-xs" />
+    </div>
+  </div>
+  <div id="events-data-source" class="events-content" x-data="loadEvents()">
+    <div class="events-header">
+      <h1>EVENTS</h1>
+      <div class="events-navigation">
+        <ul>
+          <li><a href="#music-dance-events">Music & Dance Events</a></li>
+          <li><a href="#biz-events">Biz Events</a></li>
+          <li><a href="#lit-events">Lit Events</a></li>
+          <li><a href="#special-events">Inci Specials</a></li>
+          <li><a href="#talk-events">Inci Talks</a></li>
+          <li><a href="#pro-shows">Pro Shows</a></li>
+        </ul>
+      </div>
+      <div class="events-day-filters">
+        <button @click="active='0'" :class="active==0 && 'active'" class="day-filter-btn">All</button>
+        <button @click="active='1'" :class="active==1 && 'active'" class="day-filter-btn">Day 0</button>
+        <button @click="active='2'" :class="active==2 && 'active'" class="day-filter-btn">Day 1</button>
+        <button @click="active='3'" :class="active==3 && 'active'" class="day-filter-btn">Day 2</button>
+        <button @click="active='4'" :class="active==4 && 'active'" class="day-filter-btn">Day 3</button>
+      </div>
+    </div>
+    <div class="events-sections">
+      <div class="events-cards" id="music-dance-events">
+        <h2>Music & Dance Events</h2>
+        <template x-for="event in all_events" :key="event.title">
+          <div x-show="showfn(active, 'Music_Dance', event.type, event.days)" class="atropos my-atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img :src="event.image" :alt="event.title" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <h3 x-text="event.title"></h3>
+                      <p x-text="event.tagline" class="events-card__info"></p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5 x-text="getDateString(event.days)"></h5>
+                      </div>
+                      <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
+                      </div>
+                      <div style="display: none;">
+                        <div class="modal-event-content">
+                          <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
+
+                          <div class="modal-event-header">
+                            <h1 x-text="event_.title"></h1>
+                          </div>
+
+                          <p x-text="event_.desc"></p>
+
+                          <a role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <div class="events-cards" id="biz-events">
+        <h2>Biz Events</h2>
+        <template x-for="event in all_events" :key="event.title">
+          <div x-show="showfn(active, 'Biz', event.type, event.days)" class="atropos my-atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img :src="event.image" :alt="event.title" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <h3 x-text="event.title"></h3>
+                      <p x-text="event.tagline" class="events-card__info"></p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5 x-text="getDateString(event.days)"></h5>
+                      </div>
+                      <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
+                      </div>
+                      <div style="display: none;">
+                        <div class="modal-event-content">
+                          <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
+
+                          <div class="modal-event-header">
+                            <h1 x-text="event_.title"></h1>
+                          </div>
+
+                          <p x-text="event_.desc"></p>
+
+                          <a role="button" class="button">Register</a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <div class="events-cards" id="lit-events">
+        <h2>Lit Events</h2>
+        <template x-for="event in all_events" :key="event.title">
+          <div x-show="showfn(active, 'Lit', event.type, event.days)" class="atropos my-atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img :src="event.image" :alt="event.title" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <h3 x-text="event.title"></h3>
+                      <p x-text="event.tagline" class="events-card__info"></p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5 x-text="getDateString(event.days)"></h5>
+                      </div>
+                      <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
+                      </div>
+                      <div style="display: none;">
+                        <div class="modal-event-content">
+                          <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
+
+                          <div class="modal-event-header">
+                            <h1 x-text="event_.title"></h1>
+                          </div>
+
+                          <p x-text="event_.desc"></p>
+
+                          <a role="button" class="button">Register</a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <div class="events-cards" id="special-events">
+        <h2>Inci Specials</h2>
+        <p class="coming-soon">Coming Soon....</p>
+      </div>
+      <div class="events-cards" id="talk-events">
+        <h2>Inci Talks</h2>
+        <p class="coming-soon">Coming Soon....</p>
+      </div>
+      <div class="events-cards" id="pro-shows">
+        <h2>Pro Shows</h2>
+        <p class="coming-soon">Coming Soon....</p>
+      </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="main-content">
+      <div class="left box">
+        <div class="content">
+          <img src="./assets/landing_view/Merged logo.png" alt="incident-logo" class="footer-logo">
+        </div>
+      </div>
+
+      <div class="center box">
+        <h2>Links</h2>
+        <div class="content-with-underline">
+          <div>
+            <span class="text"><a href="/">Home</a></span>
+          </div>
+          <div>
+            <span class="text"><a href="/#about">About</a></span>
+          </div>
+          <div>
+            <span class="text"><a href="events">Events</a></span>
+          </div>
+          <!-- <div>
+            <span class="text"><a href="sponsors">Sponsors</a></span>
+          </div>
+          <div>
+            <span class="text"><a href="icare">ICare</a></span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="right box">
+        <h2>Let's Connect</h2>
+        <div class="content-with-underline">
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text"> <a href="https://goo.gl/maps/UqL9MZtEnLeQb7jc8">NITK Surathkal,<br />Mangalore,
+                  Karnataka - 575025</a></span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+91 94826 30987</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text"><a href="mailto:incident@nitk.edu.in">incident@nitk.edu.in</a></span>
+            </div>
+          </div>
+          <div class="social">
+            <a href="https://www.facebook.com/incidenttheofficialpage/"><span class="fab fa-facebook-f"></span></a>
+            <a href="https://twitter.com/incident_nitk"><span class="fab fa-twitter"></span></a>
+            <a href="https://www.instagram.com/incident_nitk/"><span class="fab fa-instagram"></span></a>
+            <a href="https://www.youtube.com/channel/UC-_WeDFW_i7-GnGNJiun9_Q"><span class="fab fa-youtube"></span></a>
+            <a href="https://www.linkedin.com/company/incident-nitk2020/"><span class="fab fa-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <center>
+        <span class="credit">Created By Incident NITK </a> | </span>
+        <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
+      </center>
+    </div>
+  </footer>
+
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="assets/atropos.min.js"></script>
+  <script src="js/events.js"></script>
+  <script>
+    setTimeout(() => {
+      tags = document.getElementsByClassName("events-tags");
+
+      for (el of tags) {
+        el.setAttribute("data-atropos-offset", "-4%");
+      }
+
+      card_images = document.getElementsByClassName("events-card__image");
+
+      for (el of card_images) {
+        el.setAttribute("data-atropos-offset", "5%");
+      }
+
+      card_footer = document.getElementsByClassName("events-card__footer");
+
+      for (el of card_footer) {
+        el.setAttribute("data-atropos-offset", "4%");
+      }
+
+      card_info = document.getElementsByClassName("events-card__info");
+
+      for (el of card_info) {
+        el.setAttribute("data-atropos-offset", "-4%");
+      }
+
+      document.querySelectorAll(".my-atropos").forEach((element) => {
+        Atropos({
+          el: element,
+          activeOffset: -50,
+          highlight: false,
+        });
+      });
+    }, 100);
+
+    function showfn(active, type, event_type, event_days) {
+      if (event_type !== type) return false;
+      if (active == 0) return true;
+      for (let i = 0; i < event_days.length; i++) {
+        if (event_days[i] == active) return true;
+      }
+      return false;
+    }
+
+    function loadEvents() {
+      return {
+        active: '0',
+        all_events: all_events,
+        event_: all_events[0]
+      }
+    }
+
+    function getDateString(dates) {
+      if (dates.length === 1) return `${parseInt(dates[0]) + 2} March`
+      return `${parseInt(dates[0]) + 2}-${parseInt(dates[dates.length - 1]) + 2} March`
+    }
+
+
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    window.buttonClick = function (event, event_data) {
+      const modalContent = event.target.parentElement.nextElementSibling;
+      const modalbody = document.querySelector(".modal-body");
+      modalbody.innerHTML = modalContent.innerHTML;
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    function navbarToggleFun() {
+      document.getElementById('navbar').classList.toggle('open');
+    }
+
+  </script>
+</body>
+
+</html>

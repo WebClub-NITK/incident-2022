@@ -12,8 +12,6 @@
 /* ---Footer start--- */
 
 /* General footer styling */
-/* @import url('https:fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap'); */
-
 footer a, a:link, a:visited, a:focus, a:hover, a:active{
 	text-decoration: none;
     color: #d9d9d9;
@@ -27,7 +25,6 @@ footer{
     color: #d9d9d9;
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
-	/* background-image: radial-gradient(circle at top left, #000, #3c4858); */
 }
 
 footer .main-content{
@@ -187,12 +184,15 @@ footer .content-with-underline .text a:hover {
     }
 }
 
+/* Navbar styles */
+
 nav {
     position: fixed;
-    z-index: 9999;
+    z-index: 120;
     width: 100%;
     color: white;
     font-family: 'Poppins';
+    top:0;
 }
 
 nav .small-nav {
@@ -282,7 +282,7 @@ nav.open .line:nth-child(3) {
         justify-content: space-between;
         padding: 10px 1rem;
         transition: all 300ms ease-in-out;
-        z-index: 9999;
+        z-index: 120;
     }
     
     nav .small-nav-links {
@@ -294,7 +294,7 @@ nav.open .line:nth-child(3) {
         transform: translateY(-140%);
         opacity: 0%;
         transition: all 300ms ease-in-out;
-        z-index: 990;
+        z-index: 119;
     }
     
     .open .small-nav-links{
