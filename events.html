@@ -24,8 +24,8 @@
       <ul class="nav-links">
         <li><a href="/#about">About</a></li>
         <li><a href="#">Events</a></li>
-        <li><a href="sponsors">Sponsors</a></li>
-        <li><a href="icare">I-Care</a></li>
+        <!-- <li><a href="sponsors">Sponsors</a></li> -->
+        <!-- <li><a href="icare">I-Care</a></li> -->
         <li><a href="#footer">Contact Us</a></li>
       </ul>
     </div>
@@ -43,8 +43,8 @@
     <ul class="small-nav-links small-nav" id="mobile-nav-links">
       <li><a href="/#about">About</a></li>
       <li><a href="#">Events</a></li>
-      <li><a href="sponsors">Sponsors</a></li>
-      <li><a href="icare">I-Care</a></li>
+      <!-- <li><a href="sponsors">Sponsors</a></li> -->
+      <!-- <li><a href="icare">I-Care</a></li> -->
       <li><a href="#footer">Contact Us</a></li>
     </ul>
   </nav>
@@ -62,39 +62,33 @@
       <h1>EVENTS</h1>
       <div class="events-navigation">
         <ul>
-          <li><a href="#lit-events">Lit Events</a></li>
-          <li><a href="#biz-events">Biz Events</a></li>
           <li><a href="#music-dance-events">Music & Dance Events</a></li>
-          <li><a href="#special-events">Specials</a></li>
-          <li><a href="#">Pro Shows</a></li>
+          <li><a href="#biz-events">Biz Events</a></li>
+          <li><a href="#lit-events">Lit Events</a></li>
+          <li><a href="#special-events">Inci Specials</a></li>
+          <li><a href="#talk-events">Inci Talks</a></li>
+          <li><a href="#pro-shows">Pro Shows</a></li>
         </ul>
       </div>
       <div class="events-day-filters">
         <button @click="active='0'" :class="active==0 && 'active'" class="day-filter-btn">All</button>
-        <button @click="active='1'" :class="active==1 && 'active'" class="day-filter-btn">Day 1</button>
-        <button @click="active='2'" :class="active==2 && 'active'" class="day-filter-btn">Day 2</button>
-        <button @click="active='3'" :class="active==3 && 'active'" class="day-filter-btn">Day 3</button>
-        <button @click="active='4'" :class="active==4 && 'active'" class="day-filter-btn">Day 4</button>
+        <button @click="active='1'" :class="active==1 && 'active'" class="day-filter-btn">Day 0</button>
+        <button @click="active='2'" :class="active==2 && 'active'" class="day-filter-btn">Day 1</button>
+        <button @click="active='3'" :class="active==3 && 'active'" class="day-filter-btn">Day 2</button>
+        <button @click="active='4'" :class="active==4 && 'active'" class="day-filter-btn">Day 3</button>
       </div>
     </div>
     <div class="events-sections">
-      <div class="events-cards" id="lit-events">
-        <h2>Literary Events</h2>
-
-      </div>
-      <div class="events-cards" id="biz-events">
-        <h2>Biz Events</h2>
+      <div class="events-cards" id="music-dance-events">
+        <h2>Music & Dance Events</h2>
         <template x-for="event in all_events" :key="event.title">
-          <div x-show="showfn(active, 'Biz', event.type, event.days)" class="atropos my-atropos">
-            <!-- scale container (required) -->
+          <div x-show="showfn(active, 'Music_Dance', event.type, event.days)" class="atropos my-atropos">
             <div class="atropos-scale">
-              <!-- rotate container (required) -->
               <div class="atropos-rotate">
-                <!-- inner container (required) -->
                 <div class="atropos-inner">
                   <div class="events-card">
                     <div class="events-card__header">
-                      <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image"
+                      <img :src="event.image" :alt="event.title" class="events-card__image"
                         width="600" />
                     </div>
                     <div class="events-card__body">
@@ -119,7 +113,7 @@
 
                           <p x-text="event_.desc"></p>
 
-                          <div class="button">Register</div>
+                          <a role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
 
                         </div>
                       </div>
@@ -132,19 +126,16 @@
           </div>
         </template>
       </div>
-      <div class="events-cards" id="music-dance-events">
-        <h2>Music & Dance</h2>
+      <div class="events-cards" id="biz-events">
+        <h2>Biz Events</h2>
         <template x-for="event in all_events" :key="event.title">
-          <div x-show="showfn(active, 'Music_Dance', event.type, event.days)" class="atropos my-atropos">
-            <!-- scale container (required) -->
+          <div x-show="showfn(active, 'Biz', event.type, event.days)" class="atropos my-atropos">
             <div class="atropos-scale">
-              <!-- rotate container (required) -->
               <div class="atropos-rotate">
-                <!-- inner container (required) -->
                 <div class="atropos-inner">
                   <div class="events-card">
                     <div class="events-card__header">
-                      <img src="assets/img/cover4.jpg" alt="events-card__image" class="events-card__image"
+                      <img :src="event.image" :alt="event.title" class="events-card__image"
                         width="600" />
                     </div>
                     <div class="events-card__body">
@@ -169,7 +160,54 @@
 
                           <p x-text="event_.desc"></p>
 
-                          <div class="button">Register</div>
+                          <a role="button" class="button">Register</a>
+
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+      <div class="events-cards" id="lit-events">
+        <h2>Lit Events</h2>
+        <template x-for="event in all_events" :key="event.title">
+          <div x-show="showfn(active, 'Lit', event.type, event.days)" class="atropos my-atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img :src="event.image" :alt="event.title" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <h3 x-text="event.title"></h3>
+                      <p x-text="event.tagline" class="events-card__info"></p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5 x-text="getDateString(event.days)"></h5>
+                      </div>
+                      <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
+                      </div>
+                      <div style="display: none;">
+                        <div class="modal-event-content">
+                          <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
+
+                          <div class="modal-event-header">
+                            <h1 x-text="event_.title"></h1>
+                          </div>
+
+                          <p x-text="event_.desc"></p>
+
+                          <a role="button" class="button">Register</a>
 
                         </div>
                       </div>
@@ -183,8 +221,16 @@
         </template>
       </div>
       <div class="events-cards" id="special-events">
-        <h2>Specials</h2>
-
+        <h2>Inci Specials</h2>
+        <p class="coming-soon">Coming Soon....</p>
+      </div>
+      <div class="events-cards" id="talk-events">
+        <h2>Inci Talks</h2>
+        <p class="coming-soon">Coming Soon....</p>
+      </div>
+      <div class="events-cards" id="pro-shows">
+        <h2>Pro Shows</h2>
+        <p class="coming-soon">Coming Soon....</p>
       </div>
     </div>
     <!-- The Modal -->
@@ -202,18 +248,6 @@
 
   <!-- Footer -->
   <footer>
-    <!-- <div class="parallax">
-        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-xl-arcade.svg;"
-            class="bg-confetti">
-        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-lg-arcade.svg;"
-            class="bg-confetti">
-        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-md-arcade.svg;"
-            class="bg-confetti">
-        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-sm-arcade.svg;"
-            class="bg-confetti">
-        <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-xs-arcade.svg"
-            class="bg-confetti">
-    </div> -->
     <div class="main-content">
       <div class="left box">
         <div class="content">
@@ -233,12 +267,12 @@
           <div>
             <span class="text"><a href="events">Events</a></span>
           </div>
-          <div>
+          <!-- <div>
             <span class="text"><a href="sponsors">Sponsors</a></span>
           </div>
           <div>
             <span class="text"><a href="icare">ICare</a></span>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -253,7 +287,7 @@
             </div>
             <div class="phone">
               <span class="fas fa-phone-alt"></span>
-              <span class="text">99999 99999 </span>
+              <span class="text">+91 94826 30987</span>
             </div>
             <div class="email">
               <span class="fas fa-envelope"></span>

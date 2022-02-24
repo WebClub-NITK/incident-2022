@@ -331,6 +331,13 @@ body {
 .events-btn-11:active {
   transform: translateY(2px);
 }
+
+.coming-soon {
+  font-size: 1.3rem;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
 @media only screen and (max-width: 1200px) {
   .events-content {
     margin: 25px;
@@ -498,7 +505,7 @@ body {
 }
 
 .modal-content p{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 30px;
 }
 
@@ -534,7 +541,8 @@ body {
 
 .modal-event-header {
   margin-bottom: 50px;
-  font-size: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -594,7 +602,10 @@ body {
   height: 20px;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+  font-family: 'Poppins', sans-serif;
+}
 
 .modal-footer {
   padding: 2px 16px;

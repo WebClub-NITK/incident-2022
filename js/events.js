@@ -1,27 +1,14 @@
-// const all_events=[
-//     {
-//         "title": "Raaga Rhapsody",
-//         "days": ["1"],
-//         "tagline": "Pure, raw, strong and moving",
-//         "desc": "Pure, raw, strong and moving. INCIDENT 2022 Musicals brings to you, Raaga-Rhapsody, the solo vocals competition. From Ballads to Alaaps, this event gives you a stage to wow us with your singing and a chance to win the title of “Voice of Inci”.",
-//         "location": "SAC (Students Activity Center)",
-//         "date-time": "4th March 2022, 1:30 PM Onwards",
-//         "image": "assets/img/cover4.jpg",
-//         "type": "Music_Dance"
-//     }
-// ]
-
 const all_events=[
     {
         "title": "Raaga Rhapsody",
         "days": ["1"],
         "tagline": "Pure, raw, strong and moving",
-        "desc": "Pure, raw, strong and moving. INCIDENT 2022 Music_Music_Danceals brings to you, Raaga-Rhapsody, the solo vocals competition. From Ballads to Alaaps, this event gives you a stage to wow us with your singing and a chance to win the title of “Voice of Inci”.",
+        "desc": "Pure, raw, strong and moving. INCIDENT 2022 Musicals brings to you, Raaga-Rhapsody, the solo vocals competition. From Ballads to Alaaps, this event gives you a stage to wow us with your singing and a chance to win the title of “Voice of Inci”.",
         "link": "https://docs.google.com/document/d/1CnDneReEvqK483zO2Aa4G4fLZ4E1euT9c4Vu6o-z_tI/edit?usp=sharing",
         "location": "SAC (Students Activity Center)",
         "date-time": "4th March 2022, 1:30 PM Onwards",
-        "image": "assets/img/cover4.jpg",
-        "type": "Music_Music_Dance"
+        "image": "assets/img/case crunch.jpg",
+        "type": "Music_Dance",
     },
     {
         "title": "Biz Cosplay",
@@ -31,7 +18,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1Wz8MfwpQzzYvZUwm2e_PktDwOumSF4FBtsYjh8NxAXw/edit?usp=sharing",
         "location": "Online and Offline for final",
         "date-time": "6th March 2022, 10:00 AM Onwards",
-        "image": "assets/img/cover4.jpg",
+        "image": "assets/img/case crunch.jpg",
         "type": "Biz"
     },
     {
@@ -42,7 +29,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1MDTtTXMKgvktMtYFw25-sPgQgeTmVcXqsAwMyHGRFBU/edit?usp=sharing",
         "location": "Online and Offline for final",
         "date-time": "5th March 2022, 9:00 AM - 5:00 PM",
-        "image": "assets/img/cover4.jpg",
+        "image": "assets/img/case crunch.jpg",
         "type": "Biz"
     },
     {
@@ -53,19 +40,19 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1MDTtTXMKgvktMtYFw25-sPgQgeTmVcXqsAwMyHGRFBU/edit?usp=sharing",
         "location": "Online",
         "date-time": "26th February 12:00 AM to 4th March 11:59 PM",
-        "image": "assets/img/cover4.jpg",
+        "image": "assets/img/Crypto knight.jpg",
         "type": "Biz"
     },
     {
         "title": "Pulse",
         "days": ["2"],
         "tagline": "",
-        "desc": "Incident’s coveted inter-college Battle of Bands, Pulse attracts talent from all over the country and showcases the best Music_Music_Dance you may have yet heard.",
+        "desc": "Incident’s coveted inter-college Battle of Bands, Pulse attracts talent from all over the country and showcases the best music you may have yet heard.",
         "link": "https://docs.google.com/document/d/1I6YPyxz2CEEzXJRHBcOGzQiPIfFvYg9uAQa4d16oTU0/edit?usp=sharing",
         "location": "SAC (Students Activity Center)",
         "date-time": "4th March 2022, 9:00 AM Onwards",
-        "image": "assets/img/cover4.jpg",
-        "type": "Music_Music_Dance"
+        "image": "assets/img/case crunch.jpg",
+        "type": "Music_Dance"
     },
     {
         "title": "Toastmasters Speech And Rulebook Contest",
@@ -75,29 +62,29 @@ const all_events=[
         "link": "https://docs.google.com/document/d/10yhClWp2u9YxQa7bCQMDlHvgtXU3cw8oJEV_6ezVePM/edit?usp=sharing",
         "location": "SOM Seminar Hall",
         "date-time": "5th March 2022, 1PM - 3PM",
-        "image": "assets/img/cover4.jpg",
-        "type": "Speech"
+        "image": "assets/img/case crunch.jpg",
+        "type": "Lit"
     },
     {
-        "title": "Thandav",
+        "title": "Tandav",
         "days": ["2"],
-        "tagline": "Semi-professional Eastern and Contemporary group Music_Dance",
+        "tagline": "Semi-professional Eastern and Contemporary group dance",
         "desc": "Incident '22 brings to you the much awaited classical extravaganza Tandav, a team event, where some of the most talented artistes battle it out with prizes worth 30K up for grabs!",
         "link": "https://docs.google.com/document/d/1bplbnNvUfBglps2ft5KHoTqheOsvqyNV7O6KkB6NwDo/edit?usp=sharing",
         "location": "SJA, NITK",
         "date-time": "5th March 2022, 9:00 AM Onwards",
-        "image": "assets/img/cover4.jpg",
+        "image": "assets/img/Tandav.jpg",
         "type": "Music_Dance"
     },
     {
         "title": "Nrithya",
         "days": ["2"],
-        "tagline": "Semi-professional Eastern and Contemporary solo Music_Dance",
-        "desc": "Incident '22 brings to you Nritya, the Classical Eastern and Contemporary Solo Music_Dance Competition where the Best Music_Dancers across the country morph the diverse ethnic Indian Music_Dance forms into unforgettable performances with prizes upto 13K up for the taking.",
+        "tagline": "Semi-professional Eastern and Contemporary solo dance",
+        "desc": "Incident '22 brings to you Nritya, the Classical Eastern and Contemporary Solo Dance Competition where the best dancers across the country morph the diverse ethnic Indian Dance forms into unforgettable performances with prizes upto 13K up for the taking.",
         "link": "https://docs.google.com/document/d/1A1JPlI9aziwBWdQDsrjIZiZkzJ6SbHmNz5Xep-T4Cu8/edit?usp=sharing",
         "location": "SJA, NITK",
         "date-time": "5th March 2022, 12:00 PM onwards",
-        "image": "assets/img/cover4.jpg",
+        "image": "assets/img/Nrithya.jpg",
         "type": "Music_Dance"
     },
     {
@@ -108,7 +95,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1oEE_iq6ioDohnGAy_T-D3vXNH5CqVdUnVU9YV77EwKU/edit?usp=sharing",
         "location": "Online",
         "date-time": "26th February 12:00 AM to 4th March 11:59 PM",
-        "image": "assets/img/cover4.jpg",
+        "image": "assets/img/case crunch.jpg",
         "type": "Biz"
     },
     {
@@ -119,7 +106,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1oEE_iq6ioDohnGAy_T-D3vXNH5CqVdUnVU9YV77EwKU/edit?usp=sharing",
         "location": "Online",
         "date-time": "26th February 12:00 AM to 4th March 11:59 PM",
-        "image": "assets/img/cover4.jpg",
+        "image": "assets/img/case crunch.jpg",
         "type": "Biz"
     }
 ]
