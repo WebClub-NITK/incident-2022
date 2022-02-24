@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website for 2022 edition of Incident NITK">
+    <meta name="og:title" property="og:title" content="Incident 2022">
+    <meta property="og:image" content="https://github.com/WebClub-NITK/incident-2022/blob/main/assets/landing_view/Merged%20logo.jpg?raw=true"/>
+    <meta property="og:image:width" content="494"/>
+    <meta property="og:image:height" content="480"/>
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <title>Incident 2022</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <link rel="stylesheet" href="css/home.css">
@@ -13,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 </head>
 
 <body>
@@ -21,9 +29,9 @@
             <h3><a href="#">Incident 22</a></h3>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="sponsors.html">Sponsors</a></li>
-                <li><a href="icare.html">I-Care</a></li>
+                <li><a href="events">Events</a></li>
+                <!-- <li><a href="sponsors.html">Sponsors</a></li> -->
+                <!-- <li><a href="icare.html">I-Care</a></li> -->
                 <li><a href="#footer">Contact Us</a></li>
             </ul>
         </div>
@@ -40,9 +48,9 @@
         </div>
         <ul class="small-nav-links small-nav" id="mobile-nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="sponsors.html">Sponsors</a></li>
-            <li><a href="icare.html">I-Care</a></li>
+            <li><a href="events">Events</a></li>
+            <!-- <li><a href="sponsors.html">Sponsors</a></li> -->
+            <!-- <li><a href="icare.html">I-Care</a></li> -->
             <li><a href="#footer">Contact Us</a></li>
         </ul>
     </nav>
@@ -55,25 +63,26 @@
             <li data-depth="0.1" id="petals" class="layer">
                 <img src="assets/landing_view/Petals.png" alt="petals">
             </li>
-            <li data-depth="0.15" id="lights" class="layer">
+            <li data-depth="0.2" id="lights" class="layer">
                 <img src="assets/landing_view/lights.png" alt="petals">
             </li>
-            <li data-depth="0.2" id="grass_1" class="layer">
+            <li data-depth="0.3" id="grass_1" class="layer">
                 <img src="assets/landing_view/bg_1.png" alt="grass">
             </li>
-            <li data-depth="0.3" id="grass_2" class="layer">
+            <li data-depth="0.5" id="grass_2" class="layer">
                 <img src="assets/landing_view/bg_2.png" alt="grass">
             </li>
-            <li data-depth="0.4" id="grass_3" class="layer">
+            <li data-depth="0.6" id="grass_3" class="layer">
                 <img src="assets/landing_view/bg_3.png" alt="grass">
             </li>
-            <li data-depth="0.5" id="tree" class="layer">
+            <li data-depth="0.7" id="tree" class="layer">
                 <img src="assets/landing_view/bg_4.png" alt="grass">
             </li>
             <li data-depth="0" id="event-title" class="layer">
                 <div>
                     <h1 class="titlename">Incident 22</h1>
                     <p class="themename">Realm of Reveries</p>
+                    <p class="event-dates">3-6 March 2022</p>
                 </div>
                 <svg id="scrolltrigger" width="70" height="70" viewBox="0 0 100 100" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
@@ -90,11 +99,15 @@
 
     <section id="about">
         <div class="container">
-            <div class="about-content">
+            <div class="about-content" data-scroll>
                 <h2>About</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa odit rem iure earum et necessitatibus
-                    optio sequi aperiam quo numquam, excepturi sit illo perspiciatis corporis, nobis consequatur totam
-                    quasi quis.</p>
+                <p>Every year, around the month of March, every NITKian eagerly awaits the cultural extravaganza, that
+                    is Incident. Incident is something beyond words, it is something that takes us away from the
+                    stresses of life into the land of Euphoria.
+                </p>
+                <p>Incident has been one of the flagbearers of college
+                    fiestas in India and has taken huge strides ever since its inception in 1980 to attain this status.
+                    This year marks our 41st anniversary and Incident promises to be bigger and better.</p>
             </div>
             <svg viewBox="0 0 2360 2642" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <!-- <rect width="2360" height="2642" fill="#E5E5E5"/> -->
@@ -1138,9 +1151,9 @@
             </svg>
         </div>
     </section>
-  
-  <!-- Footer -->
-    <footer>
+
+    <!-- Footer -->
+    <footer id="footer">
         <!-- <div class="parallax">
             <img src="https://returnpath.com/assets/images/backgrounds/background-confetti-xl-arcade.svg;"
                 class="bg-confetti">
@@ -1156,42 +1169,43 @@
         <div class="main-content">
             <div class="left box">
                 <div class="content">
-                    <img src="./assets/landing_view/Merged logo.png" alt="incident-logo" class="footer-logo">
+                    <img src="./assets/landing_view/Merged logo.jpg" alt="incident-logo" class="footer-logo">
                 </div>
             </div>
 
-            <div class="center box">
+            <div class="center box" data-scroll>
                 <h2>Links</h2>
                 <div class="content-with-underline">
                     <div>
-                        <span class="text"><a href="/home">Home</a></span>
+                        <span class="text"><a href="#">Home</a></span>
                     </div>
                     <div>
-                        <span class="text"><a href="/about">About</a></span>
+                        <span class="text"><a href="#about">About</a></span>
                     </div>
                     <div>
                         <span class="text"><a href="/events">Events</a></span>
                     </div>
-                    <div>
+                    <!-- <div>
                         <span class="text"><a href="/sponsors">Sponsors</a></span>
-                    </div>
-                    <div>
+                    </div> -->
+                    <!-- <div>
                         <span class="text"><a href="/sponsors">Engineer 2022</a></span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
-            <div class="right box">
+            <div class="right box" data-scroll>
                 <h2>Let's Connect</h2>
                 <div class="content-with-underline">
                     <div class="content">
                         <div class="place">
                             <span class="fas fa-map-marker-alt"></span>
-                            <span class="text"> <a href="https://goo.gl/maps/UqL9MZtEnLeQb7jc8">NITK Surathkal,<br/>Mangalore, Karnataka - 575025</a></span>
+                            <span class="text"> <a href="https://goo.gl/maps/UqL9MZtEnLeQb7jc8">NITK
+                                    Surathkal,<br />Mangalore, Karnataka - 575025</a></span>
                         </div>
                         <div class="phone">
                             <span class="fas fa-phone-alt"></span>
-                            <span class="text">99999 99999 </span>
+                            <span class="text">+91 94826 30987 </span>
                         </div>
                         <div class="email">
                             <span class="fas fa-envelope"></span>
