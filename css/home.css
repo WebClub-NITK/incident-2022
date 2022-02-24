@@ -136,6 +136,12 @@ html {
     animation: scrolltriggeranim 1s ease-in 0s infinite normal forwards;
 }
 
+.event-dates {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
 @media (max-width: 1200px) {
     #landing-view-scene {
         background-size: cover;
@@ -241,4 +247,14 @@ html {
     #about .container {
         flex-direction: column;
     }
+}
+
+[data-scroll] {
+    transition: opacity 1s;
+}
+[data-scroll="in"] {
+    opacity: 1;
+}
+[data-scroll="out"] {
+    opacity: 0;
 }
