@@ -1,5 +1,38 @@
 const all_events=[
     {
+        "title": "Askerville Manor-Travel and Exploration Quiz",
+        "days": ["3"],
+        "tagline" : "The wind is rising",
+        "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
+        "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
+        "location": "Main Seminar Hall",
+        "date-time": "6th March, 11.30PM-12.30PM and 1PM-3PM",
+        "image": "assets/img/case crunch.jpg",
+        "type": "Lit"
+    },
+    {
+        "title": "Askerville Manor-General Quiz",
+        "days": ["1"],
+        "tagline" : "",
+        "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
+        "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
+        "location": "Main Seminar Hall",
+        "date-time": "4th March 2022, 12PM-1PM and 3PM-5PM",
+        "image": "assets/img/case crunch.jpg",
+        "type": "Lit"
+    },
+    {
+        "title": "Askerville Manor-Realm of Reveries Quiz",
+        "days": ["2"],
+        "tagline" : "",
+        "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
+        "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
+        "location": "Main Seminar Hall",
+        "date-time": "5th March 2022, 11AM-12PM and 2PM-4PM",
+        "image": "assets/img/case crunch.jpg",
+        "type": "Lit"
+    },
+    {
         "title": "Raaga Rhapsody",
         "days": ["1"],
         "tagline": "Pure, raw, strong and moving",
@@ -8,7 +41,7 @@ const all_events=[
         "location": "SAC (Students Activity Center)",
         "date-time": "4th March 2022, 1:30 PM Onwards",
         "image": "assets/img/case crunch.jpg",
-        "type": "Music_Dance",
+        "type": "Music_Dance"
     },
     {
         "title": "Biz Cosplay",
