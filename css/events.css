@@ -505,7 +505,7 @@ body {
 }
 
 .modal-content p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 30px;
 }
 
@@ -515,15 +515,16 @@ body {
     background-color: transparent;
   color: white;
   font-weight: bold;
-  border-radius: 10px;
-  background: #2d304a;
-  box-shadow:  8px 8px 16px #25273d,
-               -8px -8px 16px #353957;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #30334f, #292b43);
+  box-shadow:  6px 6px 12px #1e2032,
+              -6px -6px 12px #3c4062;
   cursor: pointer;
 }
 
 .modal-event-content {
   margin: 50px 100px;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -540,9 +541,19 @@ body {
 }
 
 .modal-event-header {
-  margin-bottom: 50px;
-  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-size: 2rem;
   text-align: center;
+}
+
+.modal-event-header p {
+  margin: 10px;
+}
+
+.rulebook {
+  color: #97aee2 !important;
+  font-size: 1.15rem;
+  border-bottom: 1.5px solid white;
 }
 
 @media only screen and (max-width: 800px) {
@@ -558,7 +569,7 @@ body {
 
   .modal-content p{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 10px 0;
   }
 }

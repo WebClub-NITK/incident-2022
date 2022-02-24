@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="List of events for Incident 2022">
   <meta name="og:title" property="og:title" content="Incident 2022 Events">
+  <meta property="og:image" content="https://github.com/WebClub-NITK/incident-2022/blob/main/assets/img/og_image.jpeg?raw=true"/>
+  <meta property="og:image:width" content="1280"/>
+  <meta property="og:image:height" content="1280"/>
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/atropos.min.css" />
   <link rel="stylesheet" href="css/shared.css" />
   <link rel="stylesheet" href="css/events.css" />
@@ -26,7 +31,7 @@
         <li><a href="#">Events</a></li>
         <!-- <li><a href="sponsors">Sponsors</a></li> -->
         <!-- <li><a href="icare">I-Care</a></li> -->
-        <li><a href="#footer">Contact Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
       </ul>
     </div>
 
@@ -109,15 +114,19 @@
 
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
+                            <p x-text="event_.date_time" class="date-time"></p>
+                            <p x-text="event_.location" class="location"></p>
                           </div>
 
                           <p x-text="event_.desc"></p>
 
+                          <a :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
+                          
                           <a role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
-
+                          
                         </div>
                       </div>
-
+                      
                     </div>
                   </div>
                 </div>
@@ -136,7 +145,7 @@
                   <div class="events-card">
                     <div class="events-card__header">
                       <img :src="event.image" :alt="event.title" class="events-card__image"
-                        width="600" />
+                      width="600" />
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
@@ -147,24 +156,27 @@
                         <h5 x-text="getDateString(event.days)"></h5>
                       </div>
                       <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
-                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
-                          </div>
+                        class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                        </div>
                       </div>
                       <div style="display: none;">
                         <div class="modal-event-content">
                           <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
-
+                          
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
+                            <p x-text="event_.date_time" class="date-time"></p>
+                            <p x-text="event_.location" class="location"></p>
                           </div>
-
+                          
                           <p x-text="event_.desc"></p>
-
+                          
+                          <a :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
                           <a role="button" class="button">Register</a>
-
+                          
                         </div>
                       </div>
-
+                      
                     </div>
                   </div>
                 </div>
@@ -183,7 +195,7 @@
                   <div class="events-card">
                     <div class="events-card__header">
                       <img :src="event.image" :alt="event.title" class="events-card__image"
-                        width="600" />
+                      width="600" />
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
@@ -194,21 +206,24 @@
                         <h5 x-text="getDateString(event.days)"></h5>
                       </div>
                       <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
-                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
-                          </div>
+                        class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                        </div>
                       </div>
                       <div style="display: none;">
                         <div class="modal-event-content">
                           <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
-
+                          
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
+                            <p x-text="event_.date_time" class="date-time"></p>
+                            <p x-text="event_.location" class="location"></p>
                           </div>
-
+                          
                           <p x-text="event_.desc"></p>
-
+                          
+                          <a :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
                           <a role="button" class="button">Register</a>
-
+                          
                         </div>
                       </div>
 
@@ -276,7 +291,7 @@
         </div>
       </div>
 
-      <div class="right box">
+      <div class="right box" id="contact">
         <h2>Let's Connect</h2>
         <div class="content-with-underline">
           <div class="content">
