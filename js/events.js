@@ -8,7 +8,8 @@ const all_events=[
         "location": "Silver Jubilee Auditorium",
         "date_time": "6th March, 9AM onwards",
         "image": "assets/img/og_image.jpeg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "registration_link": "https://dare2compete.com/competitions/268371/register"
     },
     {
         "title": "Step up Duet (Hip Hop Internationals South India Auditions)",
@@ -22,7 +23,7 @@ const all_events=[
         "type": "Music_Dance"
     },
     {
-        "title": "Step up solo (Hip Hop Internationals South India Auditions)",
+        "title": "Step up Solo (Hip Hop Internationals South India Auditions)",
         "days": ["3"],
         "tagline" : "Prepare to dance your ass off!",
         "desc": "Incident presents Step up Solo in association with Hip Hop International India which is our flagship solo-dance event on the 6th of March 2022.\n Suit up and dance your soles off to achieve hip-hop glory!",
@@ -30,7 +31,8 @@ const all_events=[
         "location": "Silver Jubilee Auditorium",
         "date_time": "6th March, 9AM onwards",
         "image": "assets/img/og_image.jpeg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "registration_link": "https://dare2compete.com/competitions/268322/register"
     },
     {
         "title": "Askerville Manor-Travel and Exploration Quiz",
@@ -75,6 +77,7 @@ const all_events=[
         "date_time": "4th March 2022, 1:30 PM Onwards",
         "image": "assets/img/og_image.jpeg",
         "type": "Music_Dance",
+        "registration_link": "https://dare2compete.com/competitions/268371/register"
     },
     {
         "title": "Biz Cosplay",
@@ -118,7 +121,8 @@ const all_events=[
         "location": "SAC (Students Activity Center)",
         "date_time": "4th March 2022, 9:00 AM Onwards",
         "image": "assets/img/og_image.jpeg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "registration_link": "https://dare2compete.com/competitions/268308/register"
     },
     {
         "title": "Toastmasters Speech And Rulebook Contest",
@@ -129,7 +133,8 @@ const all_events=[
         "location": "SOM Seminar Hall",
         "date_time": "5th March 2022, 1PM - 3PM",
         "image": "assets/img/og_image.jpeg",
-        "type": "Lit"
+        "type": "Lit",
+        "registration_link": "https://dare2compete.com/competitions/268409/register"
     },
     {
         "title": "Tandav",
@@ -140,7 +145,8 @@ const all_events=[
         "location": "SJA, NITK",
         "date_time": "5th March 2022, 9:00 AM Onwards",
         "image": "assets/img/Tandav.jpg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "registration_link": "https://dare2compete.com/competitions/268273/register"
     },
     {
         "title": "Nrithya",
@@ -151,7 +157,8 @@ const all_events=[
         "location": "SJA, NITK",
         "date_time": "5th March 2022, 12:00 PM onwards",
         "image": "assets/img/Nrithya.jpg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "registration_link": "https://dare2compete.com/competitions/268320/register"
     },
     {
         "title": "Duco",
@@ -162,17 +169,19 @@ const all_events=[
         "location": "Online",
         "date_time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/og_image.jpeg",
-        "type": "Biz"
+        "type": "Biz",
+        "registration_link": "https://dare2compete.com/competitions/268426/register"
     },
     {
         "title": "Zodiacus",
         "days": ["1"],
         "tagline": " A Realm Of Marketing",
         "desc": "Always sharing memes and decoding the latest trending ads? Well, why not win some prizes while you're at it!",
-        "link": "https://docs.google.com/document/d/1oEE_iq6ioDohnGAy_T-D3vXNH5CqVdUnVU9YV77EwKU/edit?usp=sharing",
+        "link": "https://docs.google.com/document/d/17CoOiwDDL1M6hT5BYrl9OulbSxBiLo4P3Ud5j9bqw4Y/edit?usp=sharing",
         "location": "Online",
         "date_time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/og_image.jpeg",
-        "type": "Biz"
+        "type": "Biz",
+        "registration_link": "https://dare2compete.com/competitions/268429/register"
     }
 ]

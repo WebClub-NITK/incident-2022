@@ -542,7 +542,7 @@ body {
 
 .modal-event-header {
   margin-bottom: 15px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -560,11 +560,6 @@ body {
 
   .modal-event-content{
     margin: 20px 0;
-  }
-
-  .modal-event-header{
-    font-size: 1.5rem;
-    text-align: center;
   }
 
   .modal-content p{
