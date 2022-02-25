@@ -1,5 +1,38 @@
 const all_events=[
     {
+        "title": "Promenade (Hip Hop Internationals South India Auditions)",
+        "days": ["3"],
+        "tagline" : "The wind is rising",
+        "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
+        "link": "https://docs.google.com/document/d/1FO6fXSqYrB93yv-LCcXyPjQtT7X4KT1HPRS6acxXf4Y/edit?usp=sharing",
+        "location": "Silver Jubilee Auditorium",
+        "date-time": "6th March, 9AM onwards",
+        "image": "assets/img/case crunch.jpg",
+        "type": "Music_Dance"
+    },
+    {
+        "title": "Step up Duet (Hip Hop Internationals South India Auditions)",
+        "days": ["3"],
+        "tagline" : "The wind is rising",
+        "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
+        "link": "https://docs.google.com/document/d/1lsC_l1WI50iEJnnULosZKGW32e-zwQ3-PIDvVPYINGM/edit?usp=sharing",
+        "location": "Silver Jubilee Auditorium",
+        "date-time": "6th March, 9AM onwards",
+        "image": "assets/img/case crunch.jpg",
+        "type": "Music_Dance"
+    },
+    {
+        "title": "Step up solo (Hip Hop Internationals South India Auditions)",
+        "days": ["3"],
+        "tagline" : "The wind is rising",
+        "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
+        "link": "https://docs.google.com/document/d/1ZAlsrnaI3eVYwilRHYyrIfGguKToiX0f2hNICUOzrLo/edit?usp=sharing",
+        "location": "Silver Jubilee Auditorium",
+        "date-time": "6th March, 9AM onwards",
+        "image": "assets/img/case crunch.jpg",
+        "type": "Music_Dance"
+    },
+    {
         "title": "Askerville Manor-Travel and Exploration Quiz",
         "days": ["3"],
         "tagline" : "The wind is rising",
