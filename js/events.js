@@ -7,7 +7,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1FO6fXSqYrB93yv-LCcXyPjQtT7X4KT1HPRS6acxXf4Y/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date-time": "6th March, 9AM onwards",
-        "image": "assets/img/case crunch.jpg",
+        "image": "assets/img/Tandav.jpg",
         "type": "Music_Dance"
     },
     {
@@ -18,7 +18,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1lsC_l1WI50iEJnnULosZKGW32e-zwQ3-PIDvVPYINGM/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date-time": "6th March, 9AM onwards",
-        "image": "assets/img/case crunch.jpg",
+        "image": "assets/img/Tandav.jpg",
         "type": "Music_Dance"
     },
     {
@@ -29,7 +29,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1ZAlsrnaI3eVYwilRHYyrIfGguKToiX0f2hNICUOzrLo/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date-time": "6th March, 9AM onwards",
-        "image": "assets/img/case crunch.jpg",
+        "image": "assets/img/Tandav.jpg",
         "type": "Music_Dance"
     },
     {
@@ -169,7 +169,7 @@ const all_events=[
         "days": ["1"],
         "tagline": " A Realm Of Marketing",
         "desc": "Always sharing memes and decoding the latest trending ads? Well, why not win some prizes while you're at it!",
-        "link": "https://docs.google.com/document/d/1oEE_iq6ioDohnGAy_T-D3vXNH5CqVdUnVU9YV77EwKU/edit?usp=sharing",
+        "link": "https://docs.google.com/document/d/17CoOiwDDL1M6hT5BYrl9OulbSxBiLo4P3Ud5j9bqw4Y/edit?usp=sharing",
         "location": "Online",
         "date-time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/case crunch.jpg",
