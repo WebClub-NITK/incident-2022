@@ -2,8 +2,8 @@ const all_events=[
     {
         "title": "Promenade (Hip Hop Internationals South India Auditions)",
         "days": ["3"],
-        "tagline" : "The wind is rising",
-        "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
+        "tagline" : "A coordination to cadence",
+        "desc": "Sure your squad can be the Kings of dance-offs? Incident presents Promenade in association with Hip Hop International India which is our flagship group-dance event on the 6th of March 2022.\n Suit up and dance your soles off to achieve hip-hop glory!",
         "link": "https://docs.google.com/document/d/1FO6fXSqYrB93yv-LCcXyPjQtT7X4KT1HPRS6acxXf4Y/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date-time": "6th March, 9AM onwards",
@@ -13,8 +13,8 @@ const all_events=[
     {
         "title": "Step up Duet (Hip Hop Internationals South India Auditions)",
         "days": ["3"],
-        "tagline" : "The wind is rising",
-        "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
+        "tagline" : "It's time to tango!",
+        "desc": "Incident presents Step up Duet in association with Hip Hop International India which is our flagship duet-dance event on the 6th of March 2022.\n Suit up and dance your soles off to achieve hip-hop glory!",
         "link": "https://docs.google.com/document/d/1lsC_l1WI50iEJnnULosZKGW32e-zwQ3-PIDvVPYINGM/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date-time": "6th March, 9AM onwards",
@@ -24,8 +24,8 @@ const all_events=[
     {
         "title": "Step up solo (Hip Hop Internationals South India Auditions)",
         "days": ["3"],
-        "tagline" : "The wind is rising",
-        "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
+        "tagline" : "Prepare to dance your ass off!",
+        "desc": "Incident presents Step up Solo in association with Hip Hop International India which is our flagship solo-dance event on the 6th of March 2022.\n Suit up and dance your soles off to achieve hip-hop glory!",
         "link": "https://docs.google.com/document/d/1ZAlsrnaI3eVYwilRHYyrIfGguKToiX0f2hNICUOzrLo/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date-time": "6th March, 9AM onwards",
@@ -46,7 +46,7 @@ const all_events=[
     {
         "title": "Askerville Manor-General Quiz",
         "days": ["1"],
-        "tagline" : "",
+        "tagline" : "Welcome to Knowledgeville",
         "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
         "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
         "location": "Main Seminar Hall",
@@ -57,7 +57,7 @@ const all_events=[
     {
         "title": "Askerville Manor-Realm of Reveries Quiz",
         "days": ["2"],
-        "tagline" : "",
+        "tagline" : "Trivia Teleportation",
         "desc": "Tired of annoying online zoom quizzes? Missed the thrill of quizzing the way it was always meant to be, that is, in person ?\nHow would you like not 1 or 2, but a collection of 7 exciting quizzes?\nLSD Quizsoc presents, Askerville Manor, a week-long quiz fest with a wide variety of topics",
         "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
         "location": "Main Seminar Hall",
@@ -112,7 +112,7 @@ const all_events=[
     {
         "title": "Pulse",
         "days": ["2"],
-        "tagline": "",
+        "tagline": "The stairway to Heaven",
         "desc": "Incident’s coveted inter-college Battle of Bands, Pulse attracts talent from all over the country and showcases the best music you may have yet heard.",
         "link": "https://docs.google.com/document/d/1I6YPyxz2CEEzXJRHBcOGzQiPIfFvYg9uAQa4d16oTU0/edit?usp=sharing",
         "location": "SAC (Students Activity Center)",
