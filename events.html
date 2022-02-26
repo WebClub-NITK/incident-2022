@@ -72,10 +72,10 @@
       </div>
       <div class="events-day-filters">
         <button @click="active='0'" :class="active==0 && 'active'" class="day-filter-btn">All</button>
-        <button @click="active='1'" :class="active==1 && 'active'" class="day-filter-btn">Day 0</button>
-        <button @click="active='2'" :class="active==2 && 'active'" class="day-filter-btn">Day 1</button>
-        <button @click="active='3'" :class="active==3 && 'active'" class="day-filter-btn">Day 2</button>
-        <button @click="active='4'" :class="active==4 && 'active'" class="day-filter-btn">Day 3</button>
+        <button @click="active='0'" :class="active==0 && 'active'" class="day-filter-btn">Day 0</button>
+        <button @click="active='1'" :class="active==1 && 'active'" class="day-filter-btn">Day 1</button>
+        <button @click="active='2'" :class="active==2 && 'active'" class="day-filter-btn">Day 2</button>
+        <button @click="active='3'" :class="active==3 && 'active'" class="day-filter-btn">Day 3</button>
       </div>
     </div>
     <div class="events-sections">
@@ -113,7 +113,9 @@
 
                           <p x-text="event_.desc"></p>
 
-                          <a role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
+                          <a role="button" :href="event_.d2c" target="_blank" class="button">Register</a>
+
+                          <a role="button" :href="event_.link" target="_blank" class="button">Rulebook</a>
 
                         </div>
                       </div>
@@ -160,7 +162,9 @@
 
                           <p x-text="event_.desc"></p>
 
-                          <a role="button" class="button">Register</a>
+                          <a role="button" :href="event_.d2c" target="_blank" class="button">Register</a>
+
+                          <a role="button" :href="event_.link" target="_blank" class="button">Rulebook</a>
 
                         </div>
                       </div>
@@ -207,8 +211,10 @@
 
                           <p x-text="event_.desc"></p>
 
-                          <a role="button" class="button">Register</a>
+                          <a role="button" :href="event_.d2c" target="_blank" class="button">Register</a>
 
+                          <a role="button" :href="event_.link" target="_blank" class="button">Rulebook</a>
+                          
                         </div>
                       </div>
 
@@ -222,7 +228,47 @@
       </div>
       <div class="events-cards" id="special-events">
         <h2>Inci Specials</h2>
-        <p class="coming-soon">Coming Soon....</p>
+        <template x-for="event in all_events" :key="event.title">
+          <div x-show="showfn(active, 'Specials', event.type, event.days)" class="atropos my-atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img :src="event.image" :alt="event.title" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <h3 x-text="event.title"></h3>
+                      <p x-text="event.tagline" class="events-card__info"></p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5 x-text="getDateString(event.days)"></h5>
+                      </div>
+                      <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
+                      </div>
+                      <div style="display: none;">
+                        <div class="modal-event-content">
+                          <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
+
+                          <div class="modal-event-header">
+                            <h1 x-text="event_.title"></h1>
+                          </div>
+
+                          <p x-text="event_.desc"></p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
       </div>
       <div class="events-cards" id="talk-events">
         <h2>Inci Talks</h2>
@@ -230,7 +276,47 @@
       </div>
       <div class="events-cards" id="pro-shows">
         <h2>Pro Shows</h2>
-        <p class="coming-soon">Coming Soon....</p>
+        <template x-for="event in all_events" :key="event.title">
+          <div x-show="showfn(active, 'Pro_Show', event.type, event.days)" class="atropos my-atropos">
+            <div class="atropos-scale">
+              <div class="atropos-rotate">
+                <div class="atropos-inner">
+                  <div class="events-card">
+                    <div class="events-card__header">
+                      <img :src="event.image" :alt="event.title" class="events-card__image"
+                        width="600" />
+                    </div>
+                    <div class="events-card__body">
+                      <h3 x-text="event.title"></h3>
+                      <p x-text="event.tagline" class="events-card__info"></p>
+                    </div>
+                    <div class="events-card__footer">
+                      <div class="events-left">
+                        <h5 x-text="getDateString(event.days)"></h5>
+                      </div>
+                      <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
+                      </div>
+                      <div style="display: none;">
+                        <div class="modal-event-content">
+                          <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
+
+                          <div class="modal-event-header">
+                            <h1 x-text="event_.title"></h1>
+                          </div>
+
+                          <p x-text="event_.desc"></p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </template>
       </div>
     </div>
     <!-- The Modal -->
