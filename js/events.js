@@ -4,7 +4,7 @@ const all_events=[
         "title": "Comedy Night",
         "days": ["1"],
         "tagline": "Karunesh Talwar",
-        "desc": "",
+        "desc": "Coming soon...",
         "location": "",
         "date_time": "",
         "image": "assets/img/cover2.jpg",
@@ -57,7 +57,7 @@ const all_events=[
         "desc": "Missing that blissful feeling you get on beaches during the summer? Come take part in the personalized Beach Events of Inci’22 (Days 2 and 3, 4:30 PM) at NITK’s very own private beach!",
         "location": "NITK Beach",
         "date_time": "4PM-6:30PM",
-        "image": "assets/img/cover3.jpg",
+        "image": "assets/img/moms_magic.jpg",
         "type": "Specials"
     },
     { 
@@ -184,7 +184,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1MDTtTXMKgvktMtYFw25-sPgQgeTmVcXqsAwMyHGRFBU/edit?usp=sharing",
         "location": "Online and Offline for final",
         "date_time": "5th March 2022, 9:00 AM - 5:00 PM",
-        "image": "assets/img/case crunch.jpg",
+        "image": "assets/img/case_crunch.jpg",
         "type": "Biz"
     },
     {
