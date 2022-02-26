@@ -633,4 +633,7 @@ body {
     padding: 10px 20px;
     width: 90%;
   }
+  .events-cards:first-of-type {
+    padding-top: 9rem;
+  }
 }

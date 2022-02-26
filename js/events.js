@@ -3,7 +3,7 @@ const all_events=[
     {
         "title": "Comedy Night",
         "days": ["1"],
-        "tagline": "Karunesh Talwar",
+        "tagline": "Coming soon...",
         "desc": "Coming soon...",
         "location": "",
         "date_time": "",
@@ -13,7 +13,7 @@ const all_events=[
     {
         "title": "Fusion Night",
         "days": ["2"],
-        "tagline" : "Pineapple Express",
+        "tagline" : "Coming soon...",
         "desc": "Brace yourselves to get lost to the tunes of Pineapple Express, who promise to bring you Progressive Fusion Music like you’ve never heard before!",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
@@ -23,7 +23,7 @@ const all_events=[
     {
         "title": "Bollywood Night",
         "days": ["4"],
-        "tagline" : "Benny Dayal",
+        "tagline" : "Coming soon...",
         "desc": "Don’t miss this chance to be part of a concert of a lifetime! Come witness the Bollywood Night by the quintessential Benny Dayal on the Day 3 of Inci’22!",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
@@ -50,16 +50,16 @@ const all_events=[
         "image": "assets/img/cover3.jpg",
         "type": "Specials"
     },
-    {
-        "title": "Beach Events",
-        "days": ["3", "4"],
-        "tagline" : "A bash at the beach",
-        "desc": "Missing that blissful feeling you get on beaches during the summer? Come take part in the personalized Beach Events of Inci’22 (Days 2 and 3, 4:30 PM) at NITK’s very own private beach!",
-        "location": "NITK Beach",
-        "date_time": "4PM-6:30PM",
-        "image": "assets/img/moms_magic.jpg",
-        "type": "Specials"
-    },
+    // {
+    //     "title": "Beach Events",
+    //     "days": ["3", "4"],
+    //     "tagline" : "A bash at the beach",
+    //     "desc": "Missing that blissful feeling you get on beaches during the summer? Come take part in the personalized Beach Events of Inci’22 (Days 2 and 3, 4:30 PM) at NITK’s very own private beach!",
+    //     "location": "NITK Beach",
+    //     "date_time": "4PM-6:30PM",
+    //     "image": "assets/img/moms_magic.jpg",
+    //     "type": "Specials"
+    // },
     { 
         "title": "Sand Art Competition",
         "days": ["3"],
