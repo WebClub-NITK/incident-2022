@@ -101,11 +101,12 @@ const all_events=[
         "days": ["4"],
         "tagline" : "It's time to tango!",
         "desc": "Incident presents Step up Duet in association with Hip Hop International India which is our flagship duet-dance event on the 6th of March 2022.\n Suit up and dance your soles off to achieve hip-hop glory!",
-        "link": "https://dare2compete.com/creative-cultural-event/step-up-duet-hip-hop-international-south-india-auditions-incident-2022-national-institute-of-tec-268715",
+        "link": "https://docs.google.com/document/d/1lsC_l1WI50iEJnnULosZKGW32e-zwQ3-PIDvVPYINGM/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date_time": "6th March, 9AM onwards",
         "image": "assets/img/Duet.jpg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "registration_link": "https://dare2compete.com/creative-cultural-event/step-up-duet-hip-hop-international-south-india-auditions-incident-2022-national-institute-of-tec-268715"
     },
     {
         "title": "Step up Solo",
