@@ -3,8 +3,8 @@ const all_events=[
     {
         "title": "Comedy Night",
         "days": ["1"],
-        "tagline": "Karunesh Talwar",
-        "desc": "",
+        "tagline": "Coming soon...",
+        "desc": "Coming soon...",
         "location": "",
         "date_time": "",
         "image": "assets/img/cover2.jpg",
@@ -13,8 +13,8 @@ const all_events=[
     {
         "title": "Fusion Night",
         "days": ["2"],
-        "tagline" : "Pineapple Express",
-        "desc": "Brace yourselves to get lost to the tunes of Pineapple Express, who promise to bring you Progressive Fusion Music like you’ve never heard before!",
+        "tagline" : "Coming soon...",
+        "desc": "Coming soon...",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
         "image": "assets/img/cover2.jpg",
@@ -23,8 +23,8 @@ const all_events=[
     {
         "title": "Bollywood Night",
         "days": ["4"],
-        "tagline" : "Benny Dayal",
-        "desc": "Don’t miss this chance to be part of a concert of a lifetime! Come witness the Bollywood Night by the quintessential Benny Dayal on the Day 3 of Inci’22!",
+        "tagline" : "Coming soon...",
+        "desc": "Coming soon...",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
         "image": "assets/img/cover2.jpg",
@@ -50,16 +50,16 @@ const all_events=[
         "image": "assets/img/cover3.jpg",
         "type": "Specials"
     },
-    {
-        "title": "Beach Events",
-        "days": ["3", "4"],
-        "tagline" : "A bash at the beach",
-        "desc": "Missing that blissful feeling you get on beaches during the summer? Come take part in the personalized Beach Events of Inci’22 (Days 2 and 3, 4:30 PM) at NITK’s very own private beach!",
-        "location": "NITK Beach",
-        "date_time": "4PM-6:30PM",
-        "image": "assets/img/cover3.jpg",
-        "type": "Specials"
-    },
+    // {
+    //     "title": "Beach Events",
+    //     "days": ["3", "4"],
+    //     "tagline" : "A bash at the beach",
+    //     "desc": "Missing that blissful feeling you get on beaches during the summer? Come take part in the personalized Beach Events of Inci’22 (Days 2 and 3, 4:30 PM) at NITK’s very own private beach!",
+    //     "location": "NITK Beach",
+    //     "date_time": "4PM-6:30PM",
+    //     "image": "assets/img/moms_magic.jpg",
+    //     "type": "Specials"
+    // },
     { 
         "title": "Sand Art Competition",
         "days": ["3"],
@@ -68,8 +68,8 @@ const all_events=[
         "location": "NITK Beach",
         "date_time": "3:00 PM-6:00 PM",
         "image": "assets/img/sand.jpeg",
-        "type": "Specials"
-
+        "type": "Specials",
+        "registration_link": "https://forms.gle/ZpTrdA5TMJzMywwB8"
     },
     {
         "title": "Udaan",
@@ -184,7 +184,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1MDTtTXMKgvktMtYFw25-sPgQgeTmVcXqsAwMyHGRFBU/edit?usp=sharing",
         "location": "Online and Offline for final",
         "date_time": "5th March 2022, 9:00 AM - 5:00 PM",
-        "image": "assets/img/case crunch.jpg",
+        "image": "assets/img/case_crunch.jpg",
         "type": "Biz"
     },
     {
