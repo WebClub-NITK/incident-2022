@@ -1,19 +1,19 @@
 const all_events=[
-
+    
     {
-        "title": "Pro Show: Karunesh Talwar",
+        "title": "Comedy Night",
         "days": ["1"],
-        "tagline": "Comedy Night",
+        "tagline": "Karunesh Talwar",
         "desc": "",
         "location": "",
         "date_time": "",
-        "image": "assets/img/og_image.jpeg",
+        "image": "assets/img/cover2.jpg",
         "type": "Pro_Show",
     },
     {
-        "title": "Pro Show: Pineapple Express",
+        "title": "Fusion Night",
         "days": ["2"],
-        "tagline" : "Fusion Night",
+        "tagline" : "Pineapple Express",
         "desc": "Brace yourselves to get lost to the tunes of Pineapple Express, who promise to bring you Progressive Fusion Music like you’ve never heard before!",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
@@ -21,9 +21,9 @@ const all_events=[
         "type": "Pro_Show"
     },
     {
-        "title": "Pro Show: Benny Dayal",
+        "title": "Bollywood Night",
         "days": ["4"],
-        "tagline" : "Bollywood Night",
+        "tagline" : "Benny Dayal",
         "desc": "Don’t miss this chance to be part of a concert of a lifetime! Come witness the Bollywood Night by the quintessential Benny Dayal on the Day 3 of Inci’22!",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
@@ -31,7 +31,7 @@ const all_events=[
         "type": "Pro_Show"
     },
     {
-        "title": "Inci Specials: Hogathon",
+        "title": "Hogathon",
         "days": ["2"],
         "tagline" : "Stuff yourselves until you can't no more",
         "desc": "Ever had the feeling that you want unlimited food? Participate in the Hogathon of Incident 2022 (Day 1, Pavilion) and eat your fill!",
@@ -41,7 +41,7 @@ const all_events=[
         "type": "Specials"
     },
     {
-        "title": "Inci Specials: Adventure Zone",
+        "title": "Adventure Zone",
         "days": ["2"],
         "tagline" : "Adventure Time!",
         "desc": "Got the hots for the thrills of adventure? Be there at the Adventure Zone (NTB Ground, Day 1) and let out the swashbuckler in you!",
@@ -51,15 +51,37 @@ const all_events=[
         "type": "Specials"
     },
     {
-        "title": "Inci Specials: Beach Events",
+        "title": "Beach Events",
         "days": ["3", "4"],
         "tagline" : "A bash at the beach",
         "desc": "Missing that blissful feeling you get on beaches during the summer? Come take part in the personalized Beach Events of Inci’22 (Days 2 and 3, 4:30 PM) at NITK’s very own private beach!",
         "location": "NITK Beach",
         "date_time": "4PM-6:30PM",
-        "image": "assets/img/moms_magic.jpg",
+        "image": "assets/img/cover3.jpg",
         "type": "Specials"
     },
+    { 
+        "title": "Sand Art Competition",
+        "days": ["3"],
+        "tagline" : "Art of sand",
+        "desc": "Artist Forum NITK, in association with Incident 2022, presents you a fun and creative Sand Art Competition during our flagship event Udaan. Be a part of this beach festival with your shovels and quirky ideas! Participants can join in teams of maximum 6 members from 3:00 pm to 6:00pm on 5th of March 2022 at the NITK beach. Get creative and win prizes worth 10k.",
+        "location": "NITK Beach",
+        "date_time": "3:00 PM-6:00 PM",
+        "image": "assets/img/sand.jpeg",
+        "type": "Specials"
+
+    },
+    {
+        "title": "Udaan",
+        "days": ["3"],
+        "tagline" : "The ultimate festival of the year",
+        "desc": "The much awaited Udaan '22 is finally here! Mark your calendars for the 5th of March for a fun day at the beach with games, food and stalls lined up just for you. Make a sand castle, or in take part in an intense game of tug-of-war or of course, fly kites with your friends - we got you covered.",
+        "location": "NITK Beach",
+        "date_time": "4PM-6PM",
+        "image": "assets/img/cover3.jpg",
+        "type": "Specials"
+    },
+
     {
         "title": "Promenade",
         "subtitle": "Hip Hop Internationals South India Auditions",
@@ -106,7 +128,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
         "location": "Main Seminar Hall",
         "date_time": "6th March, 11.30PM-12.30PM and 1PM-3PM",
-        "image": "assets/img/og_image.jpeg",
+        "image": "assets/img/Wind_is_rising.jpg",
         "type": "Lit"
     },
     {
@@ -117,7 +139,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
         "location": "Main Seminar Hall",
         "date_time": "4th March 2022, 12PM-1PM and 3PM-5PM",
-        "image": "assets/img/og_image.jpeg",
+        "image": "assets/img/Cirque.jpg",
         "type": "Lit"
     },
     {
@@ -128,7 +150,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
         "location": "Main Seminar Hall",
         "date_time": "5th March 2022, 11AM-12PM and 2PM-4PM",
-        "image": "assets/img/og_image.jpeg",
+        "image": "assets/img/Requizem.jpg",
         "type": "Lit"
     },
     {
