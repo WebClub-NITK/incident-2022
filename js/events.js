@@ -168,7 +168,7 @@ const all_events=[
     {
         "title": "Pulse",
         "days": ["2"],
-        "tagline": "",
+        "tagline": "Western battle of bands!",
         "desc": "Incident’s coveted inter-college Battle of Bands, Pulse attracts talent from all over the country and showcases the best music you may have yet heard.",
         "link": "https://docs.google.com/document/d/1I6YPyxz2CEEzXJRHBcOGzQiPIfFvYg9uAQa4d16oTU0/edit?usp=sharing",
         "location": "SAC (Students Activity Center)",
