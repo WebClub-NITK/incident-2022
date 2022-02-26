@@ -68,8 +68,8 @@ const all_events=[
         "location": "NITK Beach",
         "date_time": "3:00 PM-6:00 PM",
         "image": "assets/img/sand.jpeg",
-        "type": "Specials"
-
+        "type": "Specials",
+        "registration_link": "https://forms.gle/ZpTrdA5TMJzMywwB8"
     },
     {
         "title": "Udaan",
