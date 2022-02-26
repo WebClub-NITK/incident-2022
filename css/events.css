@@ -245,6 +245,11 @@ body {
   text-transform: capitalize;
 }
 
+.events-card__body-subtitle {
+  font-size: 0.8rem;
+  margin-top: -10px;
+}
+
 .events-card__footer {
   display: flex;
   padding: 1rem;
@@ -523,7 +528,7 @@ body {
 }
 
 .modal-event-content {
-  margin: 50px 100px;
+  margin: 50px;
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
@@ -544,6 +549,10 @@ body {
   margin-bottom: 15px;
   font-size: 1.5rem;
   text-align: center;
+}
+
+.modal-event-header h3 {
+  font-size: 1.3rem;
 }
 
 .modal-event-header p {

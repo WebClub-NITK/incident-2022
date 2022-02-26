@@ -1,6 +1,57 @@
 const all_events=[
     {
-        "title": "Promenade (Hip Hop Internationals South India Auditions)",
+        "title": "Pro Show: Pineapple Express",
+        "days": ["2"],
+        "tagline" : "Rock n Roll Night",
+        "desc": "Brace yourselves to get lost to the tunes of Pineapple Express, who promise to bring you Progressive Fusion Music like you’ve never heard before!",
+        "location": "NITK Main Ground",
+        "date_time": "8PM onwards",
+        "image": "assets/img/cover2.jpg",
+        "type": "Pro_Show"
+    },
+    {
+        "title": "Pro Show: Benny Dayal",
+        "days": ["4"],
+        "tagline" : "Bollywood Night",
+        "desc": "Don’t miss this chance to be part of a concert of a lifetime! Come witness the Bollywood Night by the quintessential Benny Dayal on the Day 3 of Inci’22!",
+        "location": "NITK Main Ground",
+        "date_time": "8PM onwards",
+        "image": "assets/img/cover2.jpg",
+        "type": "Pro_Show"
+    },
+    {
+        "title": "Inci Specials: Hogathon",
+        "days": ["2"],
+        "tagline" : "Stuff yourselves until you can't no more",
+        "desc": "Ever had the feeling that you want unlimited food? Participate in the Hogathon of Incident 2022 (Day 1, Pavilion) and eat your fill!",
+        "location": "Chem Block Road",
+        "date_time": "12PM-2PM",
+        "image": "assets/img/cover3.jpg",
+        "type": "Specials"
+    },
+    {
+        "title": "Inci Specials: Adventure Zone",
+        "days": ["2"],
+        "tagline" : "Adventure Time!",
+        "desc": "Got the hots for the thrills of adventure? Be there at the Adventure Zone (NTB Ground, Day 1) and let out the swashbuckler in you!",
+        "location": "NTB Ground",
+        "date_time": "10AM-5PM",
+        "image": "assets/img/cover3.jpg",
+        "type": "Specials"
+    },
+    {
+        "title": "Inci Specials: Beach Events",
+        "days": ["3", "4"],
+        "tagline" : "A bash at the beach",
+        "desc": "Missing that blissful feeling you get on beaches during the summer? Come take part in the personalized Beach Events of Inci’22 (Days 2 and 3, 4:30 PM) at NITK’s very own private beach!",
+        "location": "NITK Beach",
+        "date_time": "4PM-6:30PM",
+        "image": "assets/img/moms_magic.jpg",
+        "type": "Specials"
+    },
+    {
+        "title": "Promenade",
+        "subtitle": "Hip Hop Internationals South India Auditions",
         "days": ["4"],
         "tagline" : "A coordination to cadence",
         "desc": "Sure your squad can be the Kings of dance-offs? Incident presents Promenade in association with Hip Hop International India which is our flagship group-dance event on the 6th of March 2022.\n Suit up and dance your soles off to achieve hip-hop glory!",
@@ -12,7 +63,8 @@ const all_events=[
         "registration_link": "https://dare2compete.com/competitions/268371/register"
     },
     {
-        "title": "Step up Duet (Hip Hop Internationals South India Auditions)",
+        "title": "Step up Duet",
+        "subtitle": "Hip Hop Internationals South India Auditions",
         "days": ["4"],
         "tagline" : "It's time to tango!",
         "desc": "Incident presents Step up Duet in association with Hip Hop International India which is our flagship duet-dance event on the 6th of March 2022.\n Suit up and dance your soles off to achieve hip-hop glory!",
@@ -23,7 +75,8 @@ const all_events=[
         "type": "Music_Dance"
     },
     {
-        "title": "Step up Solo (Hip Hop Internationals South India Auditions)",
+        "title": "Step up Solo",
+        "subtitle": "Hip Hop Internationals South India Auditions",
         "days": ["4"],
         "tagline" : "Prepare to dance your ass off!",
         "desc": "Incident presents Step up Solo in association with Hip Hop International India which is our flagship solo-dance event on the 6th of March 2022.\n Suit up and dance your soles off to achieve hip-hop glory!",
@@ -87,7 +140,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1Wz8MfwpQzzYvZUwm2e_PktDwOumSF4FBtsYjh8NxAXw/edit?usp=sharing",
         "location": "Online and Offline for final",
         "date_time": "6th March 2022, 10:00 AM Onwards",
-        "image": "assets/img/og_image.jpeg",
+        "image": "assets/img/Biz Cosplay.jpg",
         "type": "Biz"
     },
     {
@@ -168,7 +221,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1oEE_iq6ioDohnGAy_T-D3vXNH5CqVdUnVU9YV77EwKU/edit?usp=sharing",
         "location": "Online",
         "date_time": "26th February 12:00 AM to 4th March 11:59 PM",
-        "image": "assets/img/og_image.jpeg",
+        "image": "assets/img/Duco.jpg",
         "type": "Biz",
         "registration_link": "https://dare2compete.com/competitions/268426/register"
     },
@@ -180,7 +233,7 @@ const all_events=[
         "link": "https://docs.google.com/document/d/17CoOiwDDL1M6hT5BYrl9OulbSxBiLo4P3Ud5j9bqw4Y/edit?usp=sharing",
         "location": "Online",
         "date_time": "26th February 12:00 AM to 4th March 11:59 PM",
-        "image": "assets/img/og_image.jpeg",
+        "image": "assets/img/Zodiacus.jpg",
         "type": "Biz",
         "registration_link": "https://dare2compete.com/competitions/268429/register"
     }

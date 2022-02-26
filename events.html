@@ -98,6 +98,7 @@
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
+                      <h6 class="events-card__body-subtitle" x-text="event.subtitle"></h6>
                       <p x-text="event.tagline" class="events-card__info"></p>
                     </div>
                     <div class="events-card__footer">
@@ -114,6 +115,7 @@
 
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
+                            <h3 x-text="event_.subtitle"></h3>
                             <p x-text="event_.date_time" class="date-time"></p>
                             <p x-text="event_.location" class="location"></p>
                           </div>
@@ -149,6 +151,7 @@
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
+                      <h6 class="events-card__body-subtitle" x-text="event.subtitle"></h6>
                       <p x-text="event.tagline" class="events-card__info"></p>
                     </div>
                     <div class="events-card__footer">
@@ -165,6 +168,7 @@
                           
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
+                            <h3 x-text="event_.subtitle"></h3>
                             <p x-text="event_.date_time" class="date-time"></p>
                             <p x-text="event_.location" class="location"></p>
                           </div>
@@ -199,6 +203,7 @@
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
+                      <h6 class="events-card__body-subtitle" x-text="event.subtitle"></h6>
                       <p x-text="event.tagline" class="events-card__info"></p>
                     </div>
                     <div class="events-card__footer">
@@ -215,6 +220,7 @@
                           
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
+                            <h3 x-text="event_.subtitle"></h3>
                             <p x-text="event_.date_time" class="date-time"></p>
                             <p x-text="event_.location" class="location"></p>
                           </div>
@@ -284,10 +290,10 @@
           </div>
           <!-- <div>
             <span class="text"><a href="sponsors">Sponsors</a></span>
-          </div>
+          </div> -->
           <div>
             <span class="text"><a href="icare">ICare</a></span>
-          </div> -->
+          </div>
         </div>
       </div>
 
@@ -331,40 +337,6 @@
   <script src="assets/atropos.min.js"></script>
   <script src="js/events.js"></script>
   <script>
-    setTimeout(() => {
-      tags = document.getElementsByClassName("events-tags");
-
-      for (el of tags) {
-        el.setAttribute("data-atropos-offset", "-4%");
-      }
-
-      card_images = document.getElementsByClassName("events-card__image");
-
-      for (el of card_images) {
-        el.setAttribute("data-atropos-offset", "5%");
-      }
-
-      card_footer = document.getElementsByClassName("events-card__footer");
-
-      for (el of card_footer) {
-        el.setAttribute("data-atropos-offset", "4%");
-      }
-
-      card_info = document.getElementsByClassName("events-card__info");
-
-      for (el of card_info) {
-        el.setAttribute("data-atropos-offset", "-4%");
-      }
-
-      document.querySelectorAll(".my-atropos").forEach((element) => {
-        Atropos({
-          el: element,
-          activeOffset: -50,
-          highlight: false,
-        });
-      });
-    }, 100);
-
     function showfn(active, type, event_type, event_days) {
       if (event_type !== type) return false;
       if (active == 0) return true;
