@@ -1,5 +1,55 @@
 const all_events=[
     {
+        "title": "Pro Show: Pineapple Express",
+        "days": ["1"],
+        "tagline" : "Rock n Roll Night",
+        "desc": "Brace yourselves to get lost to the tunes of Pineapple Express, who promise to bring you Progressive Fusion Music like you’ve never heard before!",
+        "location": "NITK Main Ground",
+        "date-time": "8PM onwards",
+        "image": "assets/img/cover2.jpg",
+        "type": "Pro_Show"
+    },
+    {
+        "title": "Pro Show: Benny Dayal",
+        "days": ["3"],
+        "tagline" : "Bollywood Night",
+        "desc": "Don’t miss this chance to be part of a concert of a lifetime! Come witness the Bollywood Night by the quintessential Benny Dayal on the Day 3 of Inci’22!",
+        "location": "NITK Main Ground",
+        "date-time": "8PM onwards",
+        "image": "assets/img/cover2.jpg",
+        "type": "Pro_Show"
+    },
+    {
+        "title": "Inci Specials: Hogathon",
+        "days": ["2"],
+        "tagline" : "Stuff yourselves until you can't no more",
+        "desc": "Ever had the feeling that you want unlimited food? Participate in the Hogathon of Incident 2022 (Day 1, Pavilion) and eat your fill!",
+        "location": "Chem Block Road",
+        "date-time": "12PM-2PM",
+        "image": "assets/img/cover3.jpg",
+        "type": "Specials"
+    },
+    {
+        "title": "Inci Specials: Adventure Zone",
+        "days": ["2"],
+        "tagline" : "Adventure Time!",
+        "desc": "Got the hots for the thrills of adventure? Be there at the Adventure Zone (NTB Ground, Day 1) and let out the swashbuckler in you!",
+        "location": "NTB Ground",
+        "date-time": "10AM-5PM",
+        "image": "assets/img/cover3.jpg",
+        "type": "Specials"
+    },
+    {
+        "title": "Inci Specials: Beach Events",
+        "days": ["2"],
+        "tagline" : "A bash at the beach",
+        "desc": "Missing that blissful feeling you get on beaches during the summer? Come take part in the personalized Beach Events of Inci’22 (Days 2 and 3, 4:30 PM) at NITK’s very own private beach!",
+        "location": "NITK Beach",
+        "date-time": "4PM-6:30PM",
+        "image": "assets/img/moms_magic.jpg",
+        "type": "Specials"
+    },
+    {
         "title": "Promenade (Hip Hop Internationals South India Auditions)",
         "days": ["3"],
         "tagline" : "A coordination to cadence",
@@ -7,8 +57,9 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1FO6fXSqYrB93yv-LCcXyPjQtT7X4KT1HPRS6acxXf4Y/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date-time": "6th March, 9AM onwards",
-        "image": "assets/img/Tandav.jpg",
-        "type": "Music_Dance"
+        "image": "assets/img/Promenade.jpeg",
+        "type": "Music_Dance",
+        "d2c": "https://dare2compete.com/creative-cultural-event/promenade-hiphop-internationals-south-india-auditions-incident-2022-national-institute-of-techno-268371"
     },
     {
         "title": "Step up Duet (Hip Hop Internationals South India Auditions)",
@@ -18,8 +69,9 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1lsC_l1WI50iEJnnULosZKGW32e-zwQ3-PIDvVPYINGM/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date-time": "6th March, 9AM onwards",
-        "image": "assets/img/Tandav.jpg",
-        "type": "Music_Dance"
+        "image": "assets/img/Duet.jpeg",
+        "type": "Music_Dance",
+        "d2c": "https://dare2compete.com/creative-cultural-event/step-up-duet-incident-2022-268715"
     },
     {
         "title": "Step up solo (Hip Hop Internationals South India Auditions)",
@@ -29,8 +81,9 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1ZAlsrnaI3eVYwilRHYyrIfGguKToiX0f2hNICUOzrLo/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date-time": "6th March, 9AM onwards",
-        "image": "assets/img/Tandav.jpg",
-        "type": "Music_Dance"
+        "image": "assets/img/Solo.jpeg",
+        "type": "Music_Dance",
+        "d2c": "https://dare2compete.com/creative-cultural-event/hip-hop-international-solo-incident-2022-national-institute-of-technology-karnataka-nitk-surathk-268322"
     },
     {
         "title": "Askerville Manor-Travel and Exploration Quiz",
@@ -40,8 +93,9 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
         "location": "Main Seminar Hall",
         "date-time": "6th March, 11.30PM-12.30PM and 1PM-3PM",
-        "image": "assets/img/case crunch.jpg",
-        "type": "Lit"
+        "image": "assets/img/cover3.jpg",
+        "type": "Lit",
+        "d2c": ""
     },
     {
         "title": "Askerville Manor-General Quiz",
@@ -51,8 +105,9 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
         "location": "Main Seminar Hall",
         "date-time": "4th March 2022, 12PM-1PM and 3PM-5PM",
-        "image": "assets/img/case crunch.jpg",
-        "type": "Lit"
+        "image": "assets/img/cover3.jpg",
+        "type": "Lit",
+        "d2c": ""
     },
     {
         "title": "Askerville Manor-Realm of Reveries Quiz",
@@ -62,8 +117,9 @@ const all_events=[
         "link": "https://docs.google.com/document/d/1-3Er3fIsE2weMjK7gHgZqn40-EOAlWkEggHgHcD4TuU/edit?usp=sharing",
         "location": "Main Seminar Hall",
         "date-time": "5th March 2022, 11AM-12PM and 2PM-4PM",
-        "image": "assets/img/case crunch.jpg",
-        "type": "Lit"
+        "image": "assets/img/cover3.jpg",
+        "type": "Lit",
+        "d2c": ""
     },
     {
         "title": "Raaga Rhapsody",
@@ -74,7 +130,8 @@ const all_events=[
         "location": "SAC (Students Activity Center)",
         "date-time": "4th March 2022, 1:30 PM Onwards",
         "image": "assets/img/case crunch.jpg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "d2c": "https://dare2compete.com/creative-cultural-event/raaga-rhapsody-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268327"
     },
     {
         "title": "Biz Cosplay",
@@ -85,7 +142,8 @@ const all_events=[
         "location": "Online and Offline for final",
         "date-time": "6th March 2022, 10:00 AM Onwards",
         "image": "assets/img/case crunch.jpg",
-        "type": "Biz"
+        "type": "Biz",
+        "d2c": ""
     },
     {
         "title": "Case Crunch",
@@ -96,7 +154,8 @@ const all_events=[
         "location": "Online and Offline for final",
         "date-time": "5th March 2022, 9:00 AM - 5:00 PM",
         "image": "assets/img/case crunch.jpg",
-        "type": "Biz"
+        "type": "Biz",
+        "d2c": "https://dare2compete.com/competition/case-crunch-national-institute-of-technology-karnataka-nitk-surathkal-267355?lb=fc3nEzA"
     },
     {
         "title": "Crypto Knight",
@@ -107,7 +166,8 @@ const all_events=[
         "location": "Online",
         "date-time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/Crypto knight.jpg",
-        "type": "Biz"
+        "type": "Biz",
+        "d2c": "https://dare2compete.com/competition/mock-crypto-trading-e-summit-22-national-institute-of-technology-karnataka-nitk-surathkal-252886"
     },
     {
         "title": "Pulse",
@@ -118,7 +178,8 @@ const all_events=[
         "location": "SAC (Students Activity Center)",
         "date-time": "4th March 2022, 9:00 AM Onwards",
         "image": "assets/img/case crunch.jpg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "d2c": "https://dare2compete.com/creative-cultural-event/pulse-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268308"
     },
     {
         "title": "Toastmasters Speech And Rulebook Contest",
@@ -129,7 +190,8 @@ const all_events=[
         "location": "SOM Seminar Hall",
         "date-time": "5th March 2022, 1PM - 3PM",
         "image": "assets/img/case crunch.jpg",
-        "type": "Lit"
+        "type": "Lit",
+        "d2c": "https://dare2compete.com/creative-cultural-event/toastmasters-speech-and-rulebook-contest-incident-2022-national-institute-of-technology-karnatak-268409"
     },
     {
         "title": "Tandav",
@@ -140,7 +202,8 @@ const all_events=[
         "location": "SJA, NITK",
         "date-time": "5th March 2022, 9:00 AM Onwards",
         "image": "assets/img/Tandav.jpg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "d2c": "https://dare2compete.com/creative-cultural-event/tandav-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268273"
     },
     {
         "title": "Nrithya",
@@ -151,7 +214,8 @@ const all_events=[
         "location": "SJA, NITK",
         "date-time": "5th March 2022, 12:00 PM onwards",
         "image": "assets/img/Nrithya.jpg",
-        "type": "Music_Dance"
+        "type": "Music_Dance",
+        "d2c": "https://dare2compete.com/creative-cultural-event/nrithya-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268320"
     },
     {
         "title": "Duco",
@@ -162,7 +226,8 @@ const all_events=[
         "location": "Online",
         "date-time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/case crunch.jpg",
-        "type": "Biz"
+        "type": "Biz",
+        "d2c": "https://dare2compete.com/creative-cultural-event/duco-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268426"
     },
     {
         "title": "Zodiacus",
@@ -173,6 +238,7 @@ const all_events=[
         "location": "Online",
         "date-time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/case crunch.jpg",
-        "type": "Biz"
+        "type": "Biz",
+        "d2c": "https://dare2compete.com/creative-cultural-event/zodiacus-best-management-team-bizwaves-incident-2022-268429"
     }
 ]
