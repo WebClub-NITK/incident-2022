@@ -1,8 +1,19 @@
 const all_events=[
+
+    {
+        "title": "Pro Show: Karunesh Talwar",
+        "days": ["1"],
+        "tagline": "Comedy Night",
+        "desc": "",
+        "location": "",
+        "date_time": "",
+        "image": "assets/img/og_image.jpeg",
+        "type": "Pro_Show",
+    },
     {
         "title": "Pro Show: Pineapple Express",
         "days": ["2"],
-        "tagline" : "Rock n Roll Night",
+        "tagline" : "Fusion Night",
         "desc": "Brace yourselves to get lost to the tunes of Pineapple Express, who promise to bring you Progressive Fusion Music like you’ve never heard before!",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
@@ -212,6 +223,18 @@ const all_events=[
         "image": "assets/img/Nrithya.jpg",
         "type": "Music_Dance",
         "registration_link": "https://dare2compete.com/competitions/268320/register"
+    },
+    {
+        "title": "Dance Workshop",
+        "days": ["3"],
+        "tagline": "Elevate Your Dance.",
+        "desc": "Dance Workshop is a warm and inviting space for youth to enjoy and learn the art of dance.",
+        "link": "https://docs.google.com/document/d/1BaoALbjW2NhpbDThiBBGoNhH7S8MKNgfDytsN2ITmJs/edit",
+        "location": "Seminar Hall, Mechanical Dept, NITK",
+        "date_time": "5th March 2022, 9:00 AM onwards",
+        "image": "assets/img/og_image.jpeg",
+        "type": "Music_Dance",
+        "registration_link": "https://dare2compete.com/creative-cultural-event/dance-workshop-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268470"
     },
     {
         "title": "Duco",
