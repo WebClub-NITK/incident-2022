@@ -44,7 +44,7 @@ const all_events=[
         "title": "Adventure Zone",
         "days": ["2"],
         "tagline" : "Adventure Time!",
-        "desc": "Got the hots for the thrills of adventure? Be there at the Adventure Zone (NTB Ground, Day 1) and let out the swashbuckler in you!",
+        "desc": "Got the hots for the thrills of adventure? We present to you the <b>Adventure Zone</b>, so that the junta gets the full Incident Experience™️. With games such as: <br/><br/> <b>Mechanical Bull: </b> Can you last 8 seconds? 😏 On the bucking animatronic bull, we mean. We will put your rodeo skills to the test here. <br/><br/> <b>Slippery Soccer:</b> it's slippy football, what more do you need? Come with your friends to have a jolly time sliding around, playing the most popular sport in the world. <br/><br/><b>Archery:</b> If you had the urge to test your archery skills when the Olympics were on, thinking that hmmmm I could do this, boy do we have an opportunity for you!<br/><br/><b>Bubble Ball:</b> Don the big bubble and go wild. Ram into your friends like a truck and get ragdolled yourself! It's anybody's game!<br/><br/><b>Sumo Wrestling:</b> Sumo. Wrestling. Wear comically oversized sumo outfits and defeat your friends in the way of the Rikishi!",
         "location": "NTB Ground",
         "date_time": "10AM-5PM",
         "image": "assets/img/cover3.jpg",
