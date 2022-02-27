@@ -45,9 +45,9 @@ const all_events=[
         "days": ["2"],
         "tagline" : "Adventure Time!",
         "desc": "Got the hots for the thrills of adventure? Be there at the Adventure Zone (NTB Ground, Day 1) and let out the swashbuckler in you!",
-        "location": "NTB Ground",
+        "location": "Old Chemical Dept Road, near Suprabha",
         "date_time": "10AM-5PM",
-        "image": "assets/img/cover3.jpg",
+        "image": "assets/img/AdventureZone.jpg",
         "type": "Specials"
     },
     // {
@@ -93,7 +93,7 @@ const all_events=[
         "date_time": "6th March, 9AM onwards",
         "image": "assets/img/Promenade.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/competitions/268371/register"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/promenade-hiphop-internationals-south-india-auditions-incident-2022-national-institute-of-techno-268371"
     },
     {
         "title": "Step up Duet",
@@ -119,7 +119,7 @@ const all_events=[
         "date_time": "6th March, 9AM onwards",
         "image": "assets/img/solo.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/competitions/268322/register"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/hip-hop-international-solo-incident-2022-national-institute-of-technology-karnataka-nitk-surathk-268322"
     },
     {
         "title": "Askerville Manor-Travel and Exploration Quiz",
@@ -213,7 +213,7 @@ const all_events=[
         "date_time": "4th March 2022, 9:00 AM Onwards",
         "image": "assets/img/Pulse.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/competitions/268308/register"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/pulse-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268308"
     },
     {
         "title": "Toastmasters Speech And Rhetoric Contest",
@@ -237,7 +237,7 @@ const all_events=[
         "date_time": "5th March 2022, 9:00 AM Onwards",
         "image": "assets/img/Tandav.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/competitions/268273/register"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/tandav-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268273"
     },
     {
         "title": "Nrithya",
@@ -249,7 +249,7 @@ const all_events=[
         "date_time": "5th March 2022, 12:00 PM onwards",
         "image": "assets/img/Nrithya.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/competitions/268320/register"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/nrithya-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268320"
     },
     {
         "title": "Dance Workshop",
