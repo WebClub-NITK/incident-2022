@@ -21,7 +21,7 @@ const all_events=[
         "type": "Pro_Show"
     },
     {
-        "title": "Bollywood Night",
+        "title": "Encore Night",
         "days": ["4"],
         "tagline" : "Coming soon...",
         "desc": "Coming soon...",
@@ -101,6 +101,7 @@ const all_events=[
         "days": ["4"],
         "tagline" : "It's time to tango!",
         "desc": "Incident presents Step up Duet in association with Hip Hop International India which is our flagship duet-dance event on the 6th of March 2022.\n Suit up and dance your soles off to achieve hip-hop glory!",
+        "link": "https://docs.google.com/document/d/1lsC_l1WI50iEJnnULosZKGW32e-zwQ3-PIDvVPYINGM/edit?usp=sharing",
         "location": "Silver Jubilee Auditorium",
         "date_time": "6th March, 9AM onwards",
         "image": "assets/img/Duet.jpg",
@@ -196,6 +197,7 @@ const all_events=[
         "days": ["2"],
         "tagline": "Put on your shining armour and test your crypto mettle",
         "desc": "BizEvents from Team Incident aims to get students familiarised and exposed to the cryptocurrency market with real-world trading without actually investing their own money.",
+        "link": "https://docs.google.com/document/d/1Y_AC4eBmf_C9Zu4xTu00p_l81AhoTeB8hM5ih-7GzYc/edit?usp=sharing",
         "location": "Online",
         "date_time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/Crypto knight.jpg",
@@ -214,7 +216,7 @@ const all_events=[
         "registration_link": "https://dare2compete.com/competitions/268308/register"
     },
     {
-        "title": "Toastmasters Speech And Rulebook Contest",
+        "title": "Toastmasters Speech And Rhetoric Contest",
         "days": ["3"],
         "tagline": "",
         "desc": "This contest aims at giving a stage where all are allowed to compete and voice their thoughts and the winner will be crowned as the TSAR. ",
