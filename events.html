@@ -84,8 +84,9 @@
       </div>
     </div>
     <div class="events-sections">
+      <div class="notice"><p> <span><i class="fas fa-exclamation-circle"></i> Note</span>Participants are required to forward a letter of acknowledgement with their names from their respective HoD/Principal/College Authority to the Dean of Student Welfares, NITK, via email.<br>[Prof. Narendranath S, Dean (Students Welfare), Email: deansw@nitk.edu.in]</p></div>
       <div class="events-cards" id="music-dance-events">
-        <h2>Music & Dance Events</h2>
+        <h2 class="first-event-header">Music & Dance Events</h2>
         <template x-for="event in all_events" :key="event.title">
           <div x-show="showfn(active, 'Music_Dance', event.type, event.days)" class="atropos my-atropos">
             <div class="atropos-scale">
