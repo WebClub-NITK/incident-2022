@@ -18,7 +18,8 @@ const all_events=[
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
         "image": "assets/img/cover2.jpg",
-        "type": "Pro_Show"
+        "type": "Pro_Show",
+        "registration_link": "https://dare2compete.com/p/fusion-night-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268452"
     },
     {
         "title": "Encore Night",
@@ -28,7 +29,8 @@ const all_events=[
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
         "image": "assets/img/cover2.jpg",
-        "type": "Pro_Show"
+        "type": "Pro_Show",
+        "registration_link": "https://dare2compete.com/p/encore-night-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268769"
     },
     {
         "title": "Hogathon",
@@ -93,7 +95,7 @@ const all_events=[
         "date_time": "6th March, 9AM onwards",
         "image": "assets/img/Promenade.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/promenade-hiphop-internationals-south-india-auditions-incident-2022-national-institute-of-techno-268371"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/promenade-hiphop-internationals-south-india-auditions-incident-2022-national-institute-of-techno-269242"
     },
     {
         "title": "Step up Duet",
@@ -106,7 +108,7 @@ const all_events=[
         "date_time": "6th March, 9AM onwards",
         "image": "assets/img/Duet.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/step-up-duet-hip-hop-international-south-india-auditions-incident-2022-national-institute-of-tec-268715"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/step-up-duet-hip-hop-international-south-india-auditions-incident-2022-national-institute-of-tec-269229"
     },
     {
         "title": "Step up Solo",
@@ -119,7 +121,7 @@ const all_events=[
         "date_time": "6th March, 9AM onwards",
         "image": "assets/img/solo.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/hip-hop-international-solo-incident-2022-national-institute-of-technology-karnataka-nitk-surathk-268322"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/step-up-solo-hip-hop-internationals-south-india-auditions-incident-2022-national-institute-of-te-269228"
     },
     {
         "title": "Askerville Manor-Travel and Exploration Quiz",
@@ -131,7 +133,7 @@ const all_events=[
         "date_time": "6th March, 11.30PM-12.30PM and 1PM-3PM",
         "image": "assets/img/Wind_is_rising.jpg",
         "type": "Lit",
-        "registration_link": "https://dare2compete.com/quiz/askerville-manor-travel-and-exploration-quiz-incident-2022-national-institute-of-technology-karnataka-nitk-surathka-268734"
+        "registration_link": "https://dare2compete.com/quiz/askerville-manor-travel-and-exploration-quiz-incident-2022-national-institute-of-technology-karnataka-nitk-surathka-269223"
     },
     {
         "title": "Askerville Manor-General Quiz",
@@ -143,7 +145,7 @@ const all_events=[
         "date_time": "4th March 2022, 12PM-1PM and 3PM-5PM",
         "image": "assets/img/Cirque.jpg",
         "type": "Lit",
-        "registration_link": "https://dare2compete.com/quiz/askerville-manor-general-quiz-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269076"
+        "registration_link": "https://dare2compete.com/quiz/askerville-manor-general-quiz-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269212"
     },
     {
         "title": "Askerville Manor-Realm of Reveries Quiz",
@@ -155,7 +157,7 @@ const all_events=[
         "date_time": "5th March 2022, 11AM-12PM and 2PM-4PM",
         "image": "assets/img/Requizem.jpg",
         "type": "Lit",
-        "registration_link": "https://dare2compete.com/quiz/askerville-manor-realm-of-reveries-quiz-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269068"
+        "registration_link": "https://dare2compete.com/quiz/askerville-manor-realm-of-reveries-quiz-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269216"
     },
     {
         "title": "Raaga Rhapsody",
@@ -167,7 +169,7 @@ const all_events=[
         "date_time": "4th March 2022, 1:30 PM Onwards",
         "image": "assets/img/Raaga.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/raaga-rhapsody-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268327"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/raaga-rhapsody-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269235"
     },
     {
         "title": "Biz Cosplay",
@@ -201,7 +203,8 @@ const all_events=[
         "location": "Online",
         "date_time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/Crypto knight.jpg",
-        "type": "Biz"
+        "type": "Biz",
+        "registration_link": "https://dare2compete.com/competition/mock-crypto-trading-e-summit-22-national-institute-of-technology-karnataka-nitk-surathkal-252886"
     },
     {
         "title": "Pulse",
@@ -213,7 +216,7 @@ const all_events=[
         "date_time": "4th March 2022, 9:00 AM Onwards",
         "image": "assets/img/Pulse.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/pulse-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268308"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/pulse-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269218"
     },
     {
         "title": "Toastmasters Speech And Rhetoric Contest",
@@ -225,7 +228,7 @@ const all_events=[
         "date_time": "5th March 2022, 1PM - 3PM",
         "image": "assets/img/TSAR.jpg",
         "type": "Lit",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/toastmasters-speech-and-rulebook-contest-incident-2022-national-institute-of-technology-karnatak-268409"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/toastmasters-speech-and-rhetoric-contest-incident-2022-national-institute-of-technology-karnatak-269243"
     },
     {
         "title": "Tandav",
@@ -237,7 +240,7 @@ const all_events=[
         "date_time": "5th March 2022, 9:00 AM Onwards",
         "image": "assets/img/Tandav.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/tandav-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268273"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/tandav-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269172"
     },
     {
         "title": "Nrithya",
@@ -249,7 +252,7 @@ const all_events=[
         "date_time": "5th March 2022, 12:00 PM onwards",
         "image": "assets/img/Nrithya.jpg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/nrithya-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268320"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/nrithya-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269225"
     },
     {
         "title": "Dance Workshop",
@@ -261,7 +264,7 @@ const all_events=[
         "date_time": "5th March 2022, 9:00 AM onwards",
         "image": "assets/img/og_image.jpeg",
         "type": "Music_Dance",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/dance-workshop-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268470"
+        "registration_link": "https://dare2compete.com/workshop/dance-workshop-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269232"
     },
     {
         "title": "Duco",
@@ -273,7 +276,7 @@ const all_events=[
         "date_time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/Duco.jpg",
         "type": "Biz",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/duco-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268426"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/duco-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269239"
     },
     {
         "title": "Zodiacus",
@@ -285,6 +288,6 @@ const all_events=[
         "date_time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/Zodiacus.jpg",
         "type": "Biz",
-        "registration_link": "https://dare2compete.com/creative-cultural-event/zodiacus-best-management-team-bizwaves-incident-2022-268429"
+        "registration_link": "https://dare2compete.com/creative-cultural-event/zodiacus-best-management-team-bizwaves-incident-2022-national-institute-of-technology-karnataka--269234"
     }
 ]
