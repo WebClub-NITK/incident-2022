@@ -55,7 +55,7 @@ const all_events=[
     {
         "title": "Chai Point",
         "days": ["2", "3", "4"],
-        "tagline" : "Come for the Chai, stay for the artistry ",
+        "tagline" : "Come for the Kadak Chai, stay for the Kadak Artistry",
         "desc": "ChaiPoint is our effort at discovering and supporting local talent. Be it stand up or poetry, instrumental or vocational, our stage is open for all. While the patrons relish a steaming cup of chai, the artists get to exhibit their forte. If you’re a budding artiste holding back for the right opportunity or someone who just wants to kickback and enjoy a pleasant evening, ChaiPoint is the venue for you.",
         "location": "New Chemical Building ",
         "date_time": "4PM-8PM",
