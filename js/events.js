@@ -61,6 +61,7 @@ const all_events=[
         "date_time": "4PM-8PM",
         "image": "assets/img/ChaiPoint.jpg",
         "type": "Specials",
+        "link":"https://docs.google.com/document/d/1On_pzgcVUGO1ucN6DqyWvsXkzd54qhuI4yV1vqVeFJg/edit?usp=sharing",
         "registration_link": "https://dare2compete.com/creative-cultural-event/chai-point-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269581"
     },
     // {
