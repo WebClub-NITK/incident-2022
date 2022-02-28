@@ -60,7 +60,8 @@ const all_events=[
         "location": "New Chemical Building ",
         "date_time": "4PM-8PM",
         "image": "assets/img/ChaiPoint.jpg",
-        "type": "Specials"
+        "type": "Specials",
+        "registration_link": "https://dare2compete.com/creative-cultural-event/chai-point-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-269581"
     },
     // {
     //     "title": "Beach Events",
