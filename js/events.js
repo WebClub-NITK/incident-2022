@@ -39,7 +39,7 @@ const all_events=[
         "desc": "Ever had the feeling that you want unlimited food? Participate in the Hogathon of Incident 2022 (Day 1, Pavilion) and eat your fill!",
         "location": "Chem Block Road",
         "date_time": "12PM-2PM",
-        "image": "assets/img/cover3.jpg",
+        "image": "assets/img/hogathon.jpg",
         "type": "Specials"
     },
     {
