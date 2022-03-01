@@ -284,7 +284,7 @@ const all_events=[
         "tagline": "we are not led, we lead",
         "desc": "The Best Management Team is that golden ticket to showcase your talents, creativity and abilities in terms of 5 M's of management which will help you to gain knowledge and improvise your expertise.",
         "link": "https://docs.google.com/document/d/1oEE_iq6ioDohnGAy_T-D3vXNH5CqVdUnVU9YV77EwKU/edit?usp=sharing",
-        "location": "Online",
+        "location": "LHC-C, NITK",
         "date_time": "26th February 12:00 AM to 4th March 11:59 PM",
         "image": "assets/img/Duco.jpg",
         "type": "Biz",
