@@ -35,11 +35,11 @@ const all_events=[
     {
         "title": "Hogathon",
         "days": ["2"],
-        "tagline" : "Stuff yourselves until you can't no more",
-        "desc": "Ever had the feeling that you want unlimited food? Participate in the Hogathon of Incident 2022 (Day 1, Pavilion) and eat your fill!",
+        "tagline" : "Attentinon all foodies!🍔🤤 The Realm shall put your gluttony to the test at the Hogathon 2022. ",
+        "desc": "Join the others in this epic competition where the one who shall chow down on the food in the least time shall be crowned the victor!",
         "location": "Chem Block Road",
         "date_time": "12PM-2PM",
-        "image": "assets/img/hogathon.jpg",
+        "image": "assets/img/hogathon.png",
         "type": "Specials"
     },
     {
