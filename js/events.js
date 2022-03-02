@@ -189,7 +189,7 @@ const all_events=[
         "tagline": "Pitching meets Pop Culture!",
         "desc": "A first-of-its-kind event that combines business acumen with pop culture!",
         "link": "https://docs.google.com/document/d/1Wz8MfwpQzzYvZUwm2e_PktDwOumSF4FBtsYjh8NxAXw/edit?usp=sharing",
-        "location": "Online and Offline for final",
+        "location": "Online",
         "date_time": "6th March 2022, 10:00 AM Onwards",
         "image": "assets/img/Biz Cosplay.jpg",
         "type": "Biz"
