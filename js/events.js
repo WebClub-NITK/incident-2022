@@ -34,7 +34,7 @@ const all_events=[
     },
     {
         "title": "Hogathon",
-        "days": ["2"],
+        "days": ["3"],
         "tagline" : "Attentinon all foodies!🍔🤤 The Realm shall put your gluttony to the test at the Hogathon 2022. ",
         "desc": "Join the others in this epic competition where the one who shall chow down on the food in the least time shall be crowned the victor!",
         "location": "Chem Block Road",
