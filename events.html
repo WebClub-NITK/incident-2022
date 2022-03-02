@@ -334,14 +334,15 @@
                             <p x-text="event_.location" class="location"></p>
                           </div>
                           
-                          <p x-text="event_.desc"></p>
+                          <p x-html="event_.desc"></p>
                           
-                          <!-- <a :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
-                          <a role="button" class="button">Register</a> -->
+                          <a x-show="event_.link" :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
+                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
+                          
                           
                         </div>
                       </div>
-
+                      
                     </div>
                   </div>
                 </div>

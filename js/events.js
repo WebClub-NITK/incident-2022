@@ -3,32 +3,33 @@ const all_events=[
     {
         "title": "Comedy Night",
         "days": ["1"],
-        "tagline": "Coming soon...",
-        "desc": "Coming soon...",
-        "location": "",
-        "date_time": "",
-        "image": "assets/img/cover2.jpg",
+        "tagline": "Karunesh Talwar",
+        "desc": "Mumbai based stand-up comedian Karnunesh Talwar started out as script writer for the massively popular AIB Comedy Group.<br/><br/>Equipped with observational skills sharp as a blade and language skills of a scholar, his commentary on societal idiosyncrasies, with has garnered him a massive following on YouTube with over 700k followers.<br/><br/>We promise you a riot of a night with gut busting laughter and comedy which will set the stage for the whole fest experience at NITK!",
+        "location": "SJA NITK",
+        "date_time": "10.00 PM",
+        "image": "assets/img/comedy_night.jpeg",
         "type": "Pro_Show",
+        "registration_link": "https://dare2compete.com/p/encore-night-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268769"
     },
     {
         "title": "Fusion Night",
         "days": ["2"],
-        "tagline" : "Coming soon...",
-        "desc": "Coming soon...",
+        "tagline" : "The Pineapple Express, The Nonviolinist",
+        "desc": "Incident '22 brings to you the concert of a life time with Banglore-based fusion band Pineapple Express! Pineapple Express brings life to the crowd with their progressive fusion take on Carnatic, Rock and Experimental Electronic music. From their debut in 2016, Pineapple Express has shot to fame after their hit single 'Money' on Kappa TV, and now it's time they bring their swagger to Incident '22!",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
-        "image": "assets/img/cover2.jpg",
+        "image": "assets/img/day1.jpg",
         "type": "Pro_Show",
         "registration_link": "https://dare2compete.com/p/fusion-night-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268452"
     },
     {
         "title": "Encore Night",
         "days": ["4"],
-        "tagline" : "Coming soon...",
-        "desc": "Coming soon...",
+        "tagline" : "Benny Dial, Lohar the Blacksmiths",
+        "desc": "Incident '22 brings to you the concert of a life time with one of India's top playback singers, Benny Dayal! He is a prominent singer in Hindi, Tamil, Telugu, Malayalam, Kannada, Gujarati and more. Benny Dayal rose to fame in 2009 with his hit song 'Rehna Tu' from the bollywood movie 'Delhi 6', and now it's time he brings his swagger to Incident '22!<br/><br/>The 6 piece band - Lohar The Blacksmiths was formed by friends Aritra, Sumukh, Vikas and Rakshith in 2019. Their band focused on covering Indian Classical and Multilingual Rock Music. Their music has won them several Battles of Bands and they have performed over 50 live concerts. Eventually, they were joined by Anoop and Sanath who make the current lineup for this up and coming indie rock band. Now they are performing on Day 3 at the Inci Pronites! The hype is absolutely on!",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
-        "image": "assets/img/cover2.jpg",
+        "image": "assets/img/Day3.jpg",
         "type": "Pro_Show",
         "registration_link": "https://dare2compete.com/p/encore-night-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268769"
     },
@@ -39,7 +40,7 @@ const all_events=[
         "desc": "Join the others in this epic competition where the one who shall chow down on the food in the least time shall be crowned the victor!",
         "location": "Chem Block Road",
         "date_time": "12PM-2PM",
-        "image": "assets/img/hogathon.png",
+        "image": "assets/img/hogathon.jpg",
         "type": "Specials"
     },
     {
@@ -192,7 +193,8 @@ const all_events=[
         "location": "Online",
         "date_time": "6th March 2022, 10:00 AM Onwards",
         "image": "assets/img/Biz Cosplay.jpg",
-        "type": "Biz"
+        "type": "Biz",
+        "registration_link": "https://forms.gle/ga5rfrrS6b19DQD19"
     },
     {
         "title": "Case Crunch",
