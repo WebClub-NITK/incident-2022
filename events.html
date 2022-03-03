@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="List of events for Incident 2022">
   <meta name="og:title" property="og:title" content="Incident 2022 Events">
-  <meta property="og:image" content="https://github.com/WebClub-NITK/incident-2022/blob/main/assets/img/og_image.jpeg?raw=true"/>
-  <meta property="og:image:width" content="1280"/>
-  <meta property="og:image:height" content="1280"/>
+  <meta property="og:image"
+    content="https://github.com/WebClub-NITK/incident-2022/blob/main/assets/img/og_image.jpeg?raw=true" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="1280" />
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="assets/atropos.min.css" />
@@ -20,6 +21,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <title>Events | Incident 2022</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1HXPJ00LWH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-1HXPJ00LWH');
+  </script>
 </head>
 
 <body>
@@ -84,7 +95,11 @@
       </div>
     </div>
     <div class="events-sections">
-      <div class="notice"><p> <span><i class="fas fa-exclamation-circle"></i> Note</span>Participants are required to forward a letter of acknowledgement with their names from their respective HoD/Principal/College Authority to the Dean of Student Welfares, NITK, via email.<br>[Prof. Narendranath S, Dean (Students Welfare), Email: deansw@nitk.edu.in]</p></div>
+      <div class="notice">
+        <p> <span><i class="fas fa-exclamation-circle"></i> Note</span>Participants are required to forward a letter of
+          acknowledgement with their names from their respective HoD/Principal/College Authority to the Dean of Student
+          Welfares, NITK, via email.<br>[Prof. Narendranath S, Dean (Students Welfare), Email: deansw@nitk.edu.in]</p>
+      </div>
       <div class="events-cards" id="music-dance-events">
         <h2 class="first-event-header">Music & Dance Events</h2>
         <template x-for="event in all_events" :key="event.title">
@@ -94,8 +109,7 @@
                 <div class="atropos-inner">
                   <div class="events-card">
                     <div class="events-card__header">
-                      <img :src="event.image" :alt="event.title" class="events-card__image"
-                        width="600" />
+                      <img :src="event.image" :alt="event.title" class="events-card__image" width="600" />
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
@@ -124,12 +138,13 @@
                           <p x-text="event_.desc"></p>
 
                           <a x-show="event_.link" :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
-                          
-                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
-                          
+
+                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link"
+                            target="_blank" class="button">Register</a>
+
                         </div>
                       </div>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -147,8 +162,7 @@
                 <div class="atropos-inner">
                   <div class="events-card">
                     <div class="events-card__header">
-                      <img :src="event.image" :alt="event.title" class="events-card__image"
-                      width="600" />
+                      <img :src="event.image" :alt="event.title" class="events-card__image" width="600" />
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
@@ -160,28 +174,29 @@
                         <h5 x-text="getDateString(event.days)"></h5>
                       </div>
                       <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
-                        class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
-                        </div>
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
                       </div>
                       <div style="display: none;">
                         <div class="modal-event-content">
                           <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
-                          
+
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
                             <h3 x-text="event_.subtitle"></h3>
                             <p x-text="event_.date_time" class="date-time"></p>
                             <p x-text="event_.location" class="location"></p>
                           </div>
-                          
+
                           <p x-text="event_.desc"></p>
-                          
+
                           <a x-show="event_.link" :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
-                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
-                          
+                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link"
+                            target="_blank" class="button">Register</a>
+
                         </div>
                       </div>
-                      
+
                     </div>
                   </div>
                 </div>
@@ -199,8 +214,7 @@
                 <div class="atropos-inner">
                   <div class="events-card">
                     <div class="events-card__header">
-                      <img :src="event.image" :alt="event.title" class="events-card__image"
-                      width="600" />
+                      <img :src="event.image" :alt="event.title" class="events-card__image" width="600" />
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
@@ -212,25 +226,26 @@
                         <h5 x-text="getDateString(event.days)"></h5>
                       </div>
                       <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
-                        class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
-                        </div>
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
                       </div>
                       <div style="display: none;">
                         <div class="modal-event-content">
                           <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
-                          
+
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
                             <h3 x-text="event_.subtitle"></h3>
                             <p x-text="event_.date_time" class="date-time"></p>
                             <p x-text="event_.location" class="location"></p>
                           </div>
-                          
+
                           <p x-text="event_.desc"></p>
-                          
+
                           <a x-show="event_.link" :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
-                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
-                          
+                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link"
+                            target="_blank" class="button">Register</a>
+
                         </div>
                       </div>
 
@@ -251,8 +266,7 @@
                 <div class="atropos-inner">
                   <div class="events-card">
                     <div class="events-card__header">
-                      <img :src="event.image" :alt="event.title" class="events-card__image"
-                      width="600" />
+                      <img :src="event.image" :alt="event.title" class="events-card__image" width="600" />
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
@@ -264,25 +278,26 @@
                         <h5 x-text="getDateString(event.days)"></h5>
                       </div>
                       <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
-                        class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
-                        </div>
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
                       </div>
                       <div style="display: none;">
                         <div class="modal-event-content">
                           <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
-                          
+
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
                             <h3 x-text="event_.subtitle"></h3>
                             <p x-text="event_.date_time" class="date-time"></p>
                             <p x-text="event_.location" class="location"></p>
                           </div>
-                          
+
                           <p x-html="event_.desc"></p>
-                          
+
                           <a x-show="event_.link" :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
-                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
-                          
+                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link"
+                            target="_blank" class="button">Register</a>
+
                         </div>
                       </div>
 
@@ -307,8 +322,7 @@
                 <div class="atropos-inner">
                   <div class="events-card">
                     <div class="events-card__header">
-                      <img :src="event.image" :alt="event.title" class="events-card__image"
-                      width="600" />
+                      <img :src="event.image" :alt="event.title" class="events-card__image" width="600" />
                     </div>
                     <div class="events-card__body">
                       <h3 x-text="event.title"></h3>
@@ -320,29 +334,30 @@
                         <h5 x-text="getDateString(event.days)"></h5>
                       </div>
                       <div class="events-right"><button x-on:click="event_=event;buttonClick($event)"
-                        class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
-                        </div>
+                          class="events-custom-btn events-btn-11" ;>Read More<div class="dot">
+                          </div>
                       </div>
                       <div style="display: none;">
                         <div class="modal-event-content">
                           <img class="modal-hero-image" :src="event_.image" :alt="event_.title" />
-                          
+
                           <div class="modal-event-header">
                             <h1 x-text="event_.title"></h1>
                             <h3 x-text="event_.subtitle"></h3>
                             <p x-text="event_.date_time" class="date-time"></p>
                             <p x-text="event_.location" class="location"></p>
                           </div>
-                          
+
                           <p x-html="event_.desc"></p>
-                          
+
                           <a x-show="event_.link" :href="event_.link" target="_blank" class="rulebook">Rulebook</a>
-                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link" target="_blank" class="button">Register</a>
-                          
-                          
+                          <a x-show="event_.registration_link" role="button" :href="event_.registration_link"
+                            target="_blank" class="button">Register</a>
+
+
                         </div>
                       </div>
-                      
+
                     </div>
                   </div>
                 </div>
