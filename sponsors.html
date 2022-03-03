@@ -7,9 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Sponsors of Incident 2022">
   <meta name="og:title" property="og:title" content="Incident 2022 Sponsors">
-  <meta property="og:image" content="https://github.com/WebClub-NITK/incident-2022/blob/main/assets/img/og_image.jpeg?raw=true"/>
-  <meta property="og:image:width" content="1280"/>
-  <meta property="og:image:height" content="1280"/>
+  <meta property="og:image"
+    content="https://github.com/WebClub-NITK/incident-2022/blob/main/assets/img/og_image.jpeg?raw=true" />
+  <meta property="og:image:width" content="1280" />
+  <meta property="og:image:height" content="1280" />
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <title>Sponsors | Incident 2022</title>
@@ -66,63 +67,64 @@
   <div class="sponsors-header">
     <h1>SPONSORS</h1>
   </div>
-  <img src="./assets/img/comingsoon.png" alt="Coming Soon" class="coming-soon">
-  <!-- <div class="container"> -->
-  <!-- <div class="row"> -->
-  <!-- <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <div class="image-container">
-              <img src="./assets/img/BookMyShow.jpg" alt="book" />
-            </div>
+  <!-- <img src="./assets/img/comingsoon.png" alt="Coming Soon" class="coming-soon"> -->
+  <div class="container">
+    <div class="row" id="sponsor-container">
+      <!-- <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card">
+          <div class="image-container">
+            <img src="./assets/img/BookMyShow.jpg" alt="book" />
+          </div>
+          <hr class="card-hr" />
+          <div class="container-fluid">
+            <h4 class="sponsor-name"><b>Book My Show</b></h4>
+            <p class="sponsor-name"><b>Book My Show</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card">
+          <div class="image-container">
+            <img src="./assets/img/nestle.png" alt="book" />
+          </div>
+          <hr class="card-hr" />
+          <div class="container-fluid">
+            <h4 class="sponsor-name"><b>Nestle</b></h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card">
+          <div class="image-container">
+            <img src="./assets/img/SBI.png" alt="book" />
+          </div>
+          <div class="brand-name">
             <hr class="card-hr" />
             <div class="container-fluid">
-              <h4 class="sponsor-name"><b>Book My Show</b></h4>
+              <h4 class="sponsor-name"><b>State Bank of India</b></h4>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <div class="image-container">
-              <img src="./assets/img/nestle.png" alt="book" />
-            </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card">
+          <div class="image-container">
+            <img src="./assets/img/CoinDCX.jpg" alt="book" />
+          </div>
+          <div class="brand-name">
             <hr class="card-hr" />
             <div class="container-fluid">
-              <h4 class="sponsor-name"><b>Nestle</b></h4>
+              <h4 class="sponsor-name"><b>CoinDCX</b></h4>
             </div>
           </div>
         </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <div class="image-container">
-              <img src="./assets/img/SBI.png" alt="book" />
-            </div>
-            <div class="brand-name">
-              <hr class="card-hr" />
-              <div class="container-fluid">
-                <h4 class="sponsor-name"><b>State Bank of India</b></h4>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-  <!-- 
-        <div class="col-lg-4 col-md-6 col-sm-6">
-          <div class="card">
-            <div class="image-container">
-              <img src="./assets/img/CoinDCX.jpg" alt="book" />
-            </div>
-            <div class="brand-name">
-              <hr class="card-hr" />
-              <div class="container-fluid">
-                <h4 class="sponsor-name"><b>CoinDCX</b></h4>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div> -->
+
+    </div>
   </div>
   <!-- Footer -->
   <footer>
@@ -189,9 +191,30 @@
       </center>
     </div>
   </footer>
+  <script src="js/sponsors.js"></script>
   <script>
     function navbarToggleFun() {
       document.getElementById('navbar').classList.toggle('open');
+    }
+    var container = document.getElementById('sponsor-container');
+    for(let i=0;i<sponsors.length; i++){
+      var element = `
+      <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="card">
+          <div class="image-container">
+            <img src="${sponsors[i].img}" alt="book" />
+          </div>
+          <div class="brand-name">
+            <hr class="card-hr" />
+            <div class="container-fluid">
+              <h4 class="sponsor-name"><b>${sponsors[i].name}</b></h4>
+              <p class="sponsor-name"><b>${sponsors[i].title}</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      `;
+      container.innerHTML+=element;
     }
   </script>
 </body>
