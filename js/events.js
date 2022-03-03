@@ -25,7 +25,7 @@ const all_events=[
     {
         "title": "Encore Night",
         "days": ["4"],
-        "tagline" : "Benny Dial, Lohar the Blacksmiths",
+        "tagline" : "Benny Dayal, Lohar the Blacksmiths",
         "desc": "Incident '22 brings to you the concert of a life time with one of India's top playback singers, Benny Dayal! He is a prominent singer in Hindi, Tamil, Telugu, Malayalam, Kannada, Gujarati and more. Benny Dayal rose to fame in 2009 with his hit song 'Rehna Tu' from the bollywood movie 'Delhi 6', and now it's time he brings his swagger to Incident '22!<br/><br/>The 6 piece band - Lohar The Blacksmiths was formed by friends Aritra, Sumukh, Vikas and Rakshith in 2019. Their band focused on covering Indian Classical and Multilingual Rock Music. Their music has won them several Battles of Bands and they have performed over 50 live concerts. Eventually, they were joined by Anoop and Sanath who make the current lineup for this up and coming indie rock band. Now they are performing on Day 3 at the Inci Pronites! The hype is absolutely on!",
         "location": "NITK Main Ground",
         "date_time": "8PM onwards",
