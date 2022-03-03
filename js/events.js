@@ -9,7 +9,7 @@ const all_events=[
         "date_time": "10.00 PM",
         "image": "assets/img/comedy_night.jpeg",
         "type": "Pro_Show",
-        "registration_link": "https://dare2compete.com/p/encore-night-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268769"
+        "registration_link": "https://dare2compete.com/p/comedy-night-with-karunesh-talwar-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-270606"
     },
     {
         "title": "Fusion Night",
