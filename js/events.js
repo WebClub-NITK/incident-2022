@@ -20,7 +20,7 @@ const all_events=[
         "date_time": "8PM onwards",
         "image": "assets/img/day1.jpg",
         "type": "Pro_Show",
-        "registration_link": "https://dare2compete.com/p/fusion-night-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-268452"
+        "registration_link": "https://dare2compete.com/p/fusion-night-incident-2022-national-institute-of-technology-karnataka-nitk-surathkal-270624"
     },
     {
         "title": "Encore Night",
