@@ -57,7 +57,8 @@ var sponsors = [
     {
         "name": "GrabOn",
         "title": "Savings Partners",
-        "img": "assets/sponsors/grabon.jpg"
+        "img": "assets/sponsors/grabon.jpg",
+        "url": "https://www.grabon.in/"
     },
     {
         "name": "Wonderla",
@@ -97,7 +98,8 @@ var sponsors = [
     {
         "name": "Kreditbee",
         "title": "Credit Partners",
-        "img": "assets/sponsors/kredit bee.png"
+        "img": "assets/sponsors/kredit bee.png",
+        "url": "https://www.kreditbee.in/"
     },
     {
         "name": "The Cine Galaxy",

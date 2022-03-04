@@ -154,11 +154,17 @@
     }
     var container = document.getElementById('sponsor-container');
     for (let i = 0; i < sponsors.length; i++) {
+      var url_section = '';
+      if(sponsors[i].url) {
+        url_section=`<a target="_blank" style="width: 100%; height: 100%" href="${sponsors[i].url}">`
+      }
       var element = `
       <div class="col-lg-4 col-md-6 col-sm-6">
         <div class="card">
           <div class="image-container">
+            ${url_section}
             <img loading="lazy" src="${sponsors[i].img}" alt="book" />
+            </a>
           </div>
           <div class="brand-name">
             <hr class="card-hr" />
