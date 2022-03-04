@@ -95,7 +95,7 @@ var sponsors = [
         "img": "assets/sponsors/sbc.png"
     },
     {
-        "name": "Kredit Bee",
+        "name": "Kreditbee",
         "title": "Credit Partners",
         "img": "assets/sponsors/kredit bee.png"
     },
