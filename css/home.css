@@ -163,7 +163,7 @@ html {
     #grass_2 img {
         bottom: 10px;
     }
-    
+
     #grass_3 img {
         bottom: 150px;
     }
@@ -236,7 +236,7 @@ html {
 }
 
 .about-content p {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 #about svg {
