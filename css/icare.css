@@ -6,7 +6,7 @@
         top: -100%;
       }
   }
-  
+
   @keyframes confetti {
       0% {
           top: 100%;
@@ -15,7 +15,7 @@
           top: -100%;
       }
   }
-  
+
   body {
       margin: 0px;
       background: #0a182b!important;
